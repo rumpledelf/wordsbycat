@@ -4,7 +4,7 @@ title: L
 permalink: /l/
 ---
 {% for letter-l in site.letter-l %}
-<h2>{{ letter-l.title }}</h2>
+<h2><a href="{{ letter-l.url }}">{{ letter-l.title }}</a></h2>
 
 {{ letter-l.content }}
 

@@ -4,8 +4,6 @@ title: R
 permalink: /r/
 ---
 {% for letter-r in site.letter-r %}
-<a href="{{ letter-r.url }}"><h2>{{ letter-r.title }}</h2></a>
-
+<h2><a href="{{ letter-r.url }}">{{ letter-r.title }}</a></h2>
 {{ letter-r.content }}
-
 {% endfor %}

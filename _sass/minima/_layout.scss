@@ -224,6 +224,13 @@
  */
 .post-header {
   margin-bottom: $spacing-unit;
+  .breadcrumb {
+    margin-bottom: $spacing-unit/2;
+    color: $grey-color;
+    a {
+      color: $grey-color;
+    }
+  }
 }
 
 .post-title {
@@ -244,6 +251,9 @@
     border-top: 1px solid $grey-color-light;
     @include media-query($on-laptop) {
       @include relative-font-size(1.75);
+    }
+    a {
+      color: $grey-color-dark;
     }
   }
 

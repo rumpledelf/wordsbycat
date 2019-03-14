@@ -4,7 +4,7 @@ title: C
 permalink: /c/
 ---
 {% for letter-c in site.letter-c %}
-<h2>{{ letter-c.title }}</h2>
+<h2><a href="{{ letter-c.url }}">{{ letter-c.title }}</a></h2>
 
 {{ letter-c.content }}
 
