@@ -1,11 +1,11 @@
 ---
 layout: page
-title: R
-permalink: /r/
+title: F
+permalink: /f/
 ---
-{% for letter-r in site.letter-r %}
-<h2>{{ letter-r.title }}</h2>
+{% for letter-f in site.letter-f %}
+<h2>{{ letter-f.title }}</h2>
 
-{{ letter-r.content }}
+{{ letter-f.content }}
 
 {% endfor %}
