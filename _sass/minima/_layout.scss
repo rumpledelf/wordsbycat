@@ -180,7 +180,7 @@
 .page-content {
   padding: 0;
   flex: 1;
-  margin-top: $spacing-unit/2;
+  margin: 5px;
   > .wrapper {
     padding: $spacing-unit;
     background-color: white;
@@ -276,6 +276,7 @@
   img {
     padding: $spacing-unit/4;
     border: 2px solid black;
+    max-width: 95%;
     box-shadow: 2px 2px 5px rgba(80,80,80,0.5);
   }
 }
