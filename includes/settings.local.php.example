@@ -1,0 +1,35 @@
+<?php
+declare(strict_types=1);
+
+$wbc_settings['openai_api_key'] = 'replace-me';
+$wbc_settings['openai_project'] = '';
+$wbc_settings['openai_text_model'] = 'gpt-5.4';
+$wbc_settings['main_image_width'] = 1200;
+$wbc_settings['main_image_height'] = 896;
+$wbc_settings['thumb_size'] = 240;
+$wbc_settings['caption_prompt_template'] = <<<'PROMPT'
+Write one short dictionary-style caption for the word "{word}" from a cat's point of view.
+
+The humour should come from feline logic:
+sleeping value, warmth, climbing value, hiding value, scratching texture, obstacle level, or how irritating humans are about it.
+
+Tone:
+- dry
+- brief
+- observant
+- slightly dismissive
+- not cute
+- not wacky
+
+Use human purpose only as a secondary, slightly contemptuous detail.
+
+Prefer one sentence.
+Use two short sentences only if needed.
+Keep it under 30 words.
+
+Examples of logic and tone:
+- Strange thing that hurts your nose when you sniff it.
+- Inappropriate sleeping place. Humans insist on putting food in it.
+
+Return only the caption text.
+PROMPT;
