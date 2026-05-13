@@ -1,0 +1,38 @@
+[
+    {
+        "id": "h/halloween",
+        "word": "Halloween",
+        "slug": "halloween",
+        "letter": "h",
+        "caption": "Halloween: annual rearrangement of the house into odd smelling orange obstacles and poor hiding spots; humans call it festive.",
+        "created_at": "2026-05-13T10:12:02+00:00",
+        "updated_at": "2026-05-13T10:12:02+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/scragz/5132593509/",
+            "image_url": "https://live.staticflickr.com/1069/5132593509_816077d3e3_o.jpg",
+            "author": "Jaycee  Scragz",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/scragz/5132593509/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/h/halloween.jpg",
+                "width": 2694,
+                "height": 1796,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/h/halloween.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/h/halloween.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    }
+]

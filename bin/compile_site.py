@@ -199,7 +199,7 @@ def render_home_page(letters: dict[str, list[Entry]], banner_public_path: str) -
     <section class="hero panel">
       {banner_markup}
       <div class="hero-copy">
-        <p>{escape(load_front_text())}</p>
+        {load_front_text()}
         <p class="home-random"><a href="/random/">Random Cat</a></p>
       </div>
     </section>
@@ -224,12 +224,13 @@ def render_about_page(about_html: str) -> str:
 def render_letter_page(letter: str, entries: list[Entry]) -> str:
     title = letter.upper()
     if entries:
+        first_entry = entries[0]
         grid = "".join(render_thumb_card(entry, show_caption=True) for entry in entries)
         body = f"""
         <section class="panel">
           <div class="section-heading letter-heading">
             <h2>{escape(title)}</h2>
-            <p class="meta">{len(entries)} word{'s' if len(entries) != 1 else ''}.</p>
+            <p class="meta">{len(entries)} word{'s' if len(entries) != 1 else ''}. <a href="{first_entry.page_path}">Start gallery view</a></p>
           </div>
           <div class="thumb-grid">
             {grid}
@@ -253,12 +254,14 @@ def render_entry_page(entry: Entry, siblings: list[Entry], prev_entry: Entry | N
     provenance = render_provenance(entry)
     nav_left = render_caret_link(prev_entry, direction="prev")
     nav_right = render_caret_link(next_entry, direction="next")
+    prev_path = prev_entry.page_path if prev_entry else ""
+    next_path = next_entry.page_path if next_entry else ""
 
     body = f"""
     <article class="panel entry-panel">
       <div class="entry-shell">
         <div class="entry-nav entry-nav-left">{nav_left}</div>
-        <div class="entry-main">
+        <div class="entry-main" data-prev="{prev_path}" data-next="{next_path}">
           <div class="entry-caption">
             <h3 class="entry-word">{escape(entry.word)}</h3>
             <p>{escape(entry.caption)}</p>
@@ -267,7 +270,6 @@ def render_entry_page(entry: Entry, siblings: list[Entry], prev_entry: Entry | N
             <img class="entry-image" src="{entry.main_public_path}" alt="{escape(entry.word)}">
           </figure>
           {provenance}
-          <div class="mini-divider"></div>
           <div class="mini-strip-wrap">
             <div class="mini-strip">
               {mini_strip}
@@ -287,6 +289,50 @@ def render_layout(title: str, body: str, page_title: str | None, current_letter:
     header_class = "site-header home-header" if is_home else "site-header"
     page_header = ""
     footer = render_footer()
+    behavior_script = """
+<script>
+(() => {
+  const currentThumb = document.querySelector('.mini-thumb.is-current');
+  const stripWrap = currentThumb ? currentThumb.closest('.mini-strip-wrap') : null;
+  if (currentThumb && stripWrap) {
+    const targetLeft = currentThumb.offsetLeft - ((stripWrap.clientWidth - currentThumb.offsetWidth) / 2);
+    const maxLeft = Math.max(0, stripWrap.scrollWidth - stripWrap.clientWidth);
+    stripWrap.scrollLeft = Math.max(0, Math.min(targetLeft, maxLeft));
+  }
+
+  const entryMain = document.querySelector('.entry-main[data-prev], .entry-main[data-next]');
+  if (!entryMain) return;
+
+  let startX = 0;
+  let startY = 0;
+
+  entryMain.addEventListener('touchstart', (event) => {
+    const touch = event.changedTouches[0];
+    if (!touch) return;
+    startX = touch.clientX;
+    startY = touch.clientY;
+  }, { passive: true });
+
+  entryMain.addEventListener('touchend', (event) => {
+    const touch = event.changedTouches[0];
+    if (!touch) return;
+
+    const deltaX = touch.clientX - startX;
+    const deltaY = touch.clientY - startY;
+    const absX = Math.abs(deltaX);
+    const absY = Math.abs(deltaY);
+
+    if (absX < 60 || absX <= absY * 1.2) {
+      return;
+    }
+
+    const target = deltaX < 0 ? entryMain.dataset.next : entryMain.dataset.prev;
+    if (target) {
+      window.location.href = target;
+    }
+  }, { passive: true });
+})();
+</script>"""
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -318,6 +364,7 @@ def render_layout(title: str, body: str, page_title: str | None, current_letter:
     {footer}
     </div>
   </div>
+  {behavior_script}
 </body>
 </html>
 """
@@ -359,7 +406,8 @@ def render_caret_link(entry: Entry | None, direction: str) -> str:
         return '<span class="caret-link is-empty" aria-hidden="true"></span>'
     glyph = "&lsaquo;" if direction == "prev" else "&rsaquo;"
     label = f"{'Previous' if direction == 'prev' else 'Next'}: {entry.word}"
-    return f'<a class="caret-link" href="{entry.page_path}" aria-label="{escape(label)}">{glyph}</a>'
+    direction_class = f"caret-link-{direction}"
+    return f'<a class="caret-link {direction_class}" href="{entry.page_path}" aria-label="{escape(label)}">{glyph}</a>'
 
 
 def render_provenance(entry: Entry) -> str:
@@ -488,6 +536,7 @@ def styles_css() -> str:
   --ink: #111111;
   --line: #000000;
   --soft-line: #cfcfcf;
+  --image-mat: #ffffff;
   --orange: #dd9341;
   --orange-dark: #ad6c1c;
   --orange-light: #ebb066;
@@ -548,7 +597,6 @@ img {
 
 .site-header {
   padding: 0 0 16px;
-  border-bottom: 1px solid var(--soft-line);
   margin-bottom: 18px;
 }
 
@@ -648,13 +696,17 @@ img {
 
 .hero-figure {
   margin: 0;
-  border-bottom: 1px solid var(--soft-line);
+  padding: 20px;
 }
 
 .hero-image {
   width: 100%;
   aspect-ratio: 1200 / 450;
   object-fit: cover;
+  padding: 6px;
+  border: 2px solid var(--line);
+  border-radius: 18px;
+  background: var(--image-mat);
 }
 
 .hero-fallback {
@@ -750,11 +802,12 @@ img {
 
 .thumb-card-image {
   width: 100%;
-  border: 1px solid var(--soft-line);
+  padding: 6px;
+  border: 2px solid var(--line);
   border-radius: 14px;
   aspect-ratio: 1;
   object-fit: cover;
-  background: #f3f3f3;
+  background: var(--image-mat);
 }
 
 .thumb-card-title {
@@ -806,9 +859,10 @@ img {
   width: 100%;
   aspect-ratio: 1200 / 896;
   object-fit: cover;
-  border: 1px solid var(--soft-line);
+  padding: 6px;
+  border: 2px solid var(--line);
   border-radius: 18px;
-  background: #f3f3f3;
+  background: var(--image-mat);
 }
 
 .entry-word {
@@ -830,25 +884,19 @@ img {
   text-align: right;
 }
 
-.mini-divider {
-  border-top: 1px solid var(--soft-line);
-  padding-bottom: 10px;
-}
-
 .entry-nav {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100%;
+  align-self: stretch;
 }
 
 .caret-link,
 .caret-link:visited {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  min-height: 100%;
+  padding: 12px 0;
   color: #000000;
   font-size: 4rem;
   line-height: 1;
@@ -877,13 +925,15 @@ img {
 .mini-thumb img {
   width: 96px;
   height: 96px;
+  padding: 6px;
   border-radius: 12px;
-  border: 1px solid var(--soft-line);
+  border: 2px solid var(--line);
   object-fit: cover;
+  background: var(--image-mat);
 }
 
 .mini-thumb.is-current img {
-  border: 2px solid var(--line);
+  border-color: var(--green);
 }
 
 .site-footer {
@@ -903,27 +953,15 @@ img {
 
   .entry-shell {
     grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
-  .entry-nav {
-    min-height: auto;
-  }
-
-  .entry-nav-left {
-    order: 2;
-    justify-content: flex-start;
-    padding-left: 0;
+    gap: 0;
   }
 
   .entry-main {
     order: 1;
   }
 
-  .entry-nav-right {
-    order: 3;
-    justify-content: flex-end;
-    padding-right: 0;
+  .entry-nav {
+    display: none;
   }
 }
 
@@ -938,6 +976,7 @@ img {
   }
 
   .thumb-grid,
+  .hero-figure,
   .hero-copy,
   .section-heading {
     padding: 14px;
@@ -946,6 +985,20 @@ img {
   .site-header {
     padding-bottom: 14px;
     margin-bottom: 14px;
+  }
+
+  .thumb-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px 14px;
+  }
+
+  .thumb-caption {
+    display: none;
+  }
+
+  .hero-image {
+    aspect-ratio: 4 / 3;
+    object-position: center center;
   }
 }
 """

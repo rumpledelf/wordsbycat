@@ -5,6 +5,52 @@ require_once __DIR__ . '/includes/bootstrap.php';
 
 $errors = [];
 $notice = '';
+$compileMessage = '';
+
+function wbc_local_timezone(): DateTimeZone {
+    static $timezone = null;
+
+    if ($timezone instanceof DateTimeZone) {
+        return $timezone;
+    }
+
+    $candidates = [
+        trim((string)getenv('TZ')),
+        trim((string)ini_get('date.timezone')),
+        'Australia/Melbourne',
+    ];
+
+    foreach ($candidates as $candidate) {
+        if ($candidate === '') {
+            continue;
+        }
+
+        try {
+            $timezone = new DateTimeZone($candidate);
+            return $timezone;
+        } catch (Throwable $e) {
+            continue;
+        }
+    }
+
+    $timezone = new DateTimeZone('UTC');
+    return $timezone;
+}
+
+function wbc_display_timestamp(string $value): string {
+    $value = trim($value);
+    if ($value === '') {
+        return '';
+    }
+
+    try {
+        $dt = new DateTimeImmutable($value);
+        $dt = $dt->setTimezone(wbc_local_timezone());
+        return $dt->format('M j Y g:ia');
+    } catch (Throwable $e) {
+        return $value;
+    }
+}
 
 $form = [
     'word' => '',
@@ -14,77 +60,96 @@ $form = [
 ];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $form['word'] = wbc_post_string('word');
-    $form['flickr_url'] = wbc_post_string('flickr_url');
-    $form['prompt'] = wbc_post_string('prompt');
-    $form['caption'] = wbc_post_string('caption');
+    $action = wbc_post_string('action', 'save');
 
-    if ($form['word'] === '') {
-        $errors[] = 'Word is required.';
-    }
-    if ($form['flickr_url'] === '') {
-        $errors[] = 'Flickr URL is required.';
-    } elseif (!wbc_is_flickr_url($form['flickr_url'])) {
-        $errors[] = 'That does not look like a Flickr URL.';
-    }
-    if ($form['caption'] === '') {
-        $errors[] = 'Caption is required.';
-    }
-
-    if (!$errors) {
+    if ($action === 'compile') {
         try {
-            $letter = wbc_derive_letter($form['word']);
-            $slug = wbc_slugify($form['word']);
-
-            $flickr = wbc_probe_flickr_by_url($form['flickr_url']);
-            if (!$flickr['ok']) {
-                throw new RuntimeException((string)($flickr['message'] ?? 'Could not fetch Flickr metadata.'));
-            }
-
-            $images = wbc_store_entry_assets($letter, $slug, $flickr);
-
-            $entries = wbc_load_letter_entries($letter);
-            $existingIndex = null;
-            $createdAt = gmdate('c');
-            foreach ($entries as $index => $existingEntry) {
-                if ((string)($existingEntry['slug'] ?? '') === $slug) {
-                    $existingIndex = $index;
-                    $createdAt = (string)($existingEntry['created_at'] ?? $createdAt);
-                    break;
+            $result = wbc_run_process([WBC_ROOT . '/bin/compile']);
+            if (!$result['ok']) {
+                $message = trim((string)$result['stderr']);
+                if ($message === '') {
+                    $message = trim((string)$result['stdout']);
                 }
+                throw new RuntimeException($message !== '' ? $message : 'Compile failed.');
             }
 
-            $entry = [
-                'id' => $letter . '/' . $slug,
-                'word' => $form['word'],
-                'slug' => $slug,
-                'letter' => $letter,
-                'caption' => $form['caption'],
-                'created_at' => $createdAt,
-                'updated_at' => gmdate('c'),
-                'source_type' => 'flickr',
-                'source' => [
-                    'page_url' => (string)($flickr['source_page_url'] ?? ''),
-                    'image_url' => (string)($flickr['source_image_url'] ?? ''),
-                    'author' => (string)($flickr['source_author'] ?? ''),
-                    'license' => (string)($flickr['source_license'] ?? ''),
-                    'license_url' => (string)($flickr['source_license_url'] ?? ''),
-                    'submitted_url' => wbc_normalize_https_url($form['flickr_url']),
-                ],
-                'images' => $images,
-            ];
-
-            if ($existingIndex === null) {
-                $entries[] = $entry;
-                $notice = 'Saved ' . $form['word'] . ' to ' . strtoupper($letter) . '.';
-            } else {
-                $entries[$existingIndex] = $entry;
-                $notice = 'Updated ' . $form['word'] . ' in ' . strtoupper($letter) . '.';
-            }
-            wbc_write_letter_entries($letter, $entries);
-            $form = ['word' => '', 'flickr_url' => '', 'prompt' => '', 'caption' => ''];
+            $compileMessage = 'Compiled static site into public/.';
         } catch (Throwable $e) {
             $errors[] = $e->getMessage();
+        }
+    } else {
+        $form['word'] = wbc_post_string('word');
+        $form['flickr_url'] = wbc_post_string('flickr_url');
+        $form['prompt'] = wbc_post_string('prompt');
+        $form['caption'] = wbc_post_string('caption');
+
+        if ($form['word'] === '') {
+            $errors[] = 'Word is required.';
+        }
+        if ($form['flickr_url'] === '') {
+            $errors[] = 'Flickr URL is required.';
+        } elseif (!wbc_is_flickr_url($form['flickr_url'])) {
+            $errors[] = 'That does not look like a Flickr URL.';
+        }
+        if ($form['caption'] === '') {
+            $errors[] = 'Caption is required.';
+        }
+
+        if (!$errors) {
+            try {
+                $letter = wbc_derive_letter($form['word']);
+                $slug = wbc_slugify($form['word']);
+
+                $flickr = wbc_probe_flickr_by_url($form['flickr_url']);
+                if (!$flickr['ok']) {
+                    throw new RuntimeException((string)($flickr['message'] ?? 'Could not fetch Flickr metadata.'));
+                }
+
+                $images = wbc_store_entry_assets($letter, $slug, $flickr);
+
+                $entries = wbc_load_letter_entries($letter);
+                $existingIndex = null;
+                $createdAt = gmdate('c');
+                foreach ($entries as $index => $existingEntry) {
+                    if ((string)($existingEntry['slug'] ?? '') === $slug) {
+                        $existingIndex = $index;
+                        $createdAt = (string)($existingEntry['created_at'] ?? $createdAt);
+                        break;
+                    }
+                }
+
+                $entry = [
+                    'id' => $letter . '/' . $slug,
+                    'word' => $form['word'],
+                    'slug' => $slug,
+                    'letter' => $letter,
+                    'caption' => $form['caption'],
+                    'created_at' => $createdAt,
+                    'updated_at' => gmdate('c'),
+                    'source_type' => 'flickr',
+                    'source' => [
+                        'page_url' => (string)($flickr['source_page_url'] ?? ''),
+                        'image_url' => (string)($flickr['source_image_url'] ?? ''),
+                        'author' => (string)($flickr['source_author'] ?? ''),
+                        'license' => (string)($flickr['source_license'] ?? ''),
+                        'license_url' => (string)($flickr['source_license_url'] ?? ''),
+                        'submitted_url' => wbc_normalize_https_url($form['flickr_url']),
+                    ],
+                    'images' => $images,
+                ];
+
+                if ($existingIndex === null) {
+                    $entries[] = $entry;
+                    $notice = 'Saved ' . $form['word'] . ' to ' . strtoupper($letter) . '.';
+                } else {
+                    $entries[$existingIndex] = $entry;
+                    $notice = 'Updated ' . $form['word'] . ' in ' . strtoupper($letter) . '.';
+                }
+                wbc_write_letter_entries($letter, $entries);
+                $form = ['word' => '', 'flickr_url' => '', 'prompt' => '', 'caption' => ''];
+            } catch (Throwable $e) {
+                $errors[] = $e->getMessage();
+            }
         }
     }
 }
@@ -196,6 +261,11 @@ $recentEntries = wbc_recent_entries(10);
       background: linear-gradient(180deg, var(--orange-light) 0%, var(--orange) 55%, var(--orange-dark) 100%);
       color: white;
     }
+    button.compile {
+      padding: 16px 28px;
+      font-size: 20px;
+      background: linear-gradient(180deg, #9bd85b 0%, #6ea931 55%, #4e7d1e 100%);
+    }
     button:hover {
       filter: brightness(1.03);
     }
@@ -251,6 +321,13 @@ $recentEntries = wbc_recent_entries(10);
       font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
       font-size: 13px;
     }
+    .compile-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
     @media (max-width: 760px) {
       .grid {
         grid-template-columns: 1fr;
@@ -262,8 +339,14 @@ $recentEntries = wbc_recent_entries(10);
 <main>
   <div class="panel">
     <h1>Words by Cat Intake</h1>
-    <p>Lowest-friction bucket: paste a Flickr URL, seed a caption, save it into the per-letter JSON.</p>
-    <p class="meta">Static site generation is intentionally not wired in yet.</p>
+    <p>Bucket o'cats: paste a Flickr URL, seed a caption, toss it into the per-letter JSON bucket.</p>
+    <div class="compile-bar">
+      <p class="meta">Tosss in as many cats as you want, then compile the static site.</p>
+      <form method="post">
+        <input type="hidden" name="action" value="compile">
+        <button type="submit" class="compile">Compile Site</button>
+      </form>
+    </div>
   </div>
 
   <div class="panel">
@@ -279,7 +362,12 @@ $recentEntries = wbc_recent_entries(10);
       <div class="notice"><?= h($notice) ?></div>
     <?php endif; ?>
 
+    <?php if ($compileMessage !== ''): ?>
+      <div class="notice"><?= h($compileMessage) ?></div>
+    <?php endif; ?>
+
     <form method="post">
+      <input type="hidden" name="action" value="save">
       <div class="grid">
         <div>
           <label for="word">Word</label>
@@ -342,7 +430,7 @@ $recentEntries = wbc_recent_entries(10);
                   <br><span class="meta"><?= h($author) ?></span>
                 <?php endif; ?>
               </td>
-              <td class="meta"><?= h((string)($entry['created_at'] ?? '')) ?></td>
+              <td class="meta"><?= h(wbc_display_timestamp((string)($entry['created_at'] ?? ''))) ?></td>
             </tr>
           <?php endforeach; ?>
         </tbody>
@@ -356,6 +444,7 @@ const wordInput = document.getElementById('word');
 const promptInput = document.getElementById('prompt');
 const captionInput = document.getElementById('caption');
 const promptTemplate = <?= json_encode((string)wbc_setting('caption_prompt_template', ''), JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?>;
+const blankPromptTemplate = promptTemplate ? promptTemplate.replaceAll('{word}', '') : '';
 
 function fillPromptFromWord(force = false) {
   const word = wordInput.value.trim();
@@ -367,6 +456,14 @@ function fillPromptFromWord(force = false) {
 }
 
 wordInput?.addEventListener('blur', () => fillPromptFromWord(false));
+promptInput?.addEventListener('focus', () => {
+  const word = wordInput.value.trim();
+  if (!word) return;
+  const currentPrompt = promptInput.value.trim();
+  if (!currentPrompt || currentPrompt === blankPromptTemplate.trim()) {
+    promptInput.value = promptTemplate.replaceAll('{word}', word);
+  }
+});
 
 button?.addEventListener('click', async () => {
   const word = wordInput.value.trim();

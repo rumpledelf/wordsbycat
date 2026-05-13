@@ -1,0 +1,74 @@
+[
+    {
+        "id": "s/sandals",
+        "word": "Sandals",
+        "slug": "sandals",
+        "letter": "s",
+        "caption": "They said to walk a mile in someone else's shoes. I don't understand how this works.",
+        "created_at": "2026-05-13T09:21:40+00:00",
+        "updated_at": "2026-05-13T09:21:40+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/wjlonien/26620635720/",
+            "image_url": "https://live.staticflickr.com/7250/26620635720_cfe9a09f34_o.jpg",
+            "author": "Wolfgang Lonien",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/wjlonien/26620635720/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/s/sandals.jpg",
+                "width": 4608,
+                "height": 3456,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/s/sandals.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/s/sandals.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "s/step",
+        "word": "Step",
+        "slug": "step",
+        "letter": "s",
+        "caption": "These can make it more difficult for cats to ascend than if they were not there at all. Unsure why humans bother. Most inconvenient.",
+        "created_at": "2026-05-13T10:18:33+00:00",
+        "updated_at": "2026-05-13T10:18:33+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/70626035@N00/15240172260/",
+            "image_url": "https://live.staticflickr.com/3930/15240172260_936bc9c8c3_o.jpg",
+            "author": "jacinta lluch valero",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/70626035@N00/15240172260/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/s/step.jpg",
+                "width": 3648,
+                "height": 2736,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/s/step.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/s/step.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    }
+]

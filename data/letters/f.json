@@ -1,0 +1,38 @@
+[
+    {
+        "id": "f/fence",
+        "word": "Fence",
+        "slug": "fence",
+        "letter": "f",
+        "caption": "Vertical boundary with occasional sun and limited sitting value; humans call it protection, though it mostly ruins shortcuts to the humans next door.",
+        "created_at": "2026-05-13T09:34:43+00:00",
+        "updated_at": "2026-05-13T09:34:43+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/26344495@N05/33147501406/",
+            "image_url": "https://live.staticflickr.com/3950/33147501406_35093ee6d4_o.jpg",
+            "author": "Ivan Radic",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/26344495@N05/33147501406"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/f/fence.jpg",
+                "width": 1920,
+                "height": 1285,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/f/fence.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/f/fence.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    }
+]

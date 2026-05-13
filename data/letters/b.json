@@ -1,0 +1,254 @@
+[
+    {
+        "id": "b/ball",
+        "word": "Ball",
+        "slug": "ball",
+        "letter": "b",
+        "caption": "While usually enjoyed by dogs, balls can be enjoyed by cats too.",
+        "created_at": "2026-05-13T10:01:05+00:00",
+        "updated_at": "2026-05-13T10:01:05+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/tinney/1968509792/",
+            "image_url": "https://live.staticflickr.com/2118/1968509792_16e2a0e6e7_o.jpg",
+            "author": "Dustin Tinney",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/tinney/1968509792/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/b/ball.jpg",
+                "width": 3504,
+                "height": 2336,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/b/ball.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/b/ball.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "b/basket",
+        "word": "Basket",
+        "slug": "basket",
+        "letter": "b",
+        "caption": "Basket: woven container of moderate warmth and acceptable scratching texture, usually wasted on laundry or fruit when it could be holding a cat.",
+        "created_at": "2026-05-13T10:08:01+00:00",
+        "updated_at": "2026-05-13T10:08:01+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/flowbadger/2131485340/",
+            "image_url": "https://live.staticflickr.com/2024/2131485340_3ecf8837e8_o.png",
+            "author": "flowbadger",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/flowbadger/2131485340/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/b/basket.png",
+                "width": 1210,
+                "height": 800,
+                "mime": "image/png"
+            },
+            "main": {
+                "path": "data/derived/b/basket.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/b/basket.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "b/beard",
+        "word": "Beard",
+        "slug": "beard",
+        "letter": "b",
+        "caption": "Some humans and some cats have beards. If you combine a cat with no beard and a human with no beard, sometimes you get a human with a beard and no cat.",
+        "created_at": "2026-05-13T10:15:05+00:00",
+        "updated_at": "2026-05-13T10:15:05+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/tinfoilraccoon/121927334/",
+            "image_url": "https://live.staticflickr.com/1/121927334_b4dd3696ea_o.jpg",
+            "author": "rochelle hartman",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/tinfoilraccoon/121927334/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/b/beard.jpg",
+                "width": 2304,
+                "height": 1728,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/b/beard.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/b/beard.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "b/bowl",
+        "word": "Bowl",
+        "slug": "bowl",
+        "letter": "b",
+        "caption": "Bowls have many uses. You can eat out of them, drink out of them, or just sleep in them.",
+        "created_at": "2026-05-13T10:24:51+00:00",
+        "updated_at": "2026-05-13T10:24:51+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/69302634@N02/15826716938/",
+            "image_url": "https://live.staticflickr.com/8643/15826716938_cf5fe7cf48_o.jpg",
+            "author": "Helena Jacoba",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/69302634@N02/15826716938/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/b/bowl.jpg",
+                "width": 3264,
+                "height": 2448,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/b/bowl.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/b/bowl.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "b/box",
+        "word": "Box",
+        "slug": "box",
+        "letter": "b",
+        "caption": "Boxes are the best thing humans have ever invented. They were clearly made just for the pleasure of cats.",
+        "created_at": "2026-05-13T10:26:45+00:00",
+        "updated_at": "2026-05-13T10:26:45+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/sethoscope/31755839041/",
+            "image_url": "https://live.staticflickr.com/5441/31755839041_6bee852097_o.jpg",
+            "author": "sethoscope",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/sethoscope/31755839041/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/b/box.jpg",
+                "width": 4256,
+                "height": 2832,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/b/box.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/b/box.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "b/bridge",
+        "word": "Bridge",
+        "slug": "bridge",
+        "letter": "b",
+        "caption": "Bridges allow cats to travel places on foot they would otherwise have to request a human to take them by boat.",
+        "created_at": "2026-05-13T10:25:28+00:00",
+        "updated_at": "2026-05-13T10:25:28+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/peterkaminski/1742493/",
+            "image_url": "https://live.staticflickr.com/2/1742493_63f4e0571b_o.jpg",
+            "author": "Peter Kaminski",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/peterkaminski/1742493/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/b/bridge.jpg",
+                "width": 2272,
+                "height": 1704,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/b/bridge.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/b/bridge.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "b/butternut-squash",
+        "word": "Butternut squash",
+        "slug": "butternut-squash",
+        "letter": "b",
+        "caption": "Cats are known for their ability to fall asleep anytime, anywhere, even under a pile of squash. This is just one of the many ways that cats surpass humans.",
+        "created_at": "2026-05-13T10:27:28+00:00",
+        "updated_at": "2026-05-13T10:27:28+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/builtbydave/3976918106/",
+            "image_url": "https://live.staticflickr.com/3512/3976918106_bd895bc857_h.jpg",
+            "author": "Dave Stone",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/builtbydave/3976918106/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/b/butternut-squash.jpg",
+                "width": 1600,
+                "height": 1200,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/b/butternut-squash.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/b/butternut-squash.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    }
+]

@@ -1,0 +1,74 @@
+[
+    {
+        "id": "g/gambling",
+        "word": "Gambling",
+        "slug": "gambling",
+        "letter": "g",
+        "caption": "No sleeping value; all tension and crinkling, with humans staring at it as if losing treats were a hobby.",
+        "created_at": "2026-05-13T09:30:27+00:00",
+        "updated_at": "2026-05-13T09:30:27+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/gchampeau/8054404096/",
+            "image_url": "https://live.staticflickr.com/8035/8054404096_ec16374972_o.jpg",
+            "author": "gchampeau",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/gchampeau/8054404096/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/g/gambling.jpg",
+                "width": 3075,
+                "height": 2042,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/g/gambling.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/g/gambling.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "g/grass",
+        "word": "Grass",
+        "slug": "grass",
+        "letter": "g",
+        "caption": "Perfect camouflage. Makes cats invisible. Look at this photo with only grass in it.",
+        "created_at": "2026-05-13T10:07:04+00:00",
+        "updated_at": "2026-05-13T10:07:04+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/zenera/12788481/",
+            "image_url": "https://live.staticflickr.com/9/12788481_084cad25f6_h.jpg",
+            "author": "zenera",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/zenera/12788481/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/g/grass.jpg",
+                "width": 1600,
+                "height": 1200,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/g/grass.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/g/grass.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    }
+]

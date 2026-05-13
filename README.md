@@ -26,6 +26,14 @@ Small local tool plus static compiler for a gallery of stupid words illustrated 
 
 The prompt and anything private belong in `includes/settings.local.php`, not in committed files.
 
+## Local Compatibility
+
+- Treat this machine as the compatibility floor unless explicitly changed.
+- PHP must remain compatible with PHP `7.3.x`.
+- Python should stay stdlib-only where practical.
+- Shell scripts should stay simple and portable.
+- Image tooling should tolerate either `magick` or `convert`.
+
 ## Running The Intake Form
 
 From the repo root:
@@ -113,6 +121,14 @@ http://localhost:8001
 - There is no paging yet.
 - The compiler is stdlib Python plus normal shell use.
 - ImageMagick is required for image derivatives.
+
+## Architectural Boundary
+
+- This repo is a local offline content tool plus a static compiler.
+- The local intake and editing flow lives outside `public/`.
+- `public/` is the generated output and deployable site artifact.
+- This differs from `regionalhub`, which also has offline data editors but uses them only for relatively static support data rather than for the whole site.
+- The point of this shape is to avoid running a live writable admin surface on the server at all.
 
 ## Remaining Work
 

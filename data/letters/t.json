@@ -36,6 +36,42 @@
         }
     },
     {
+        "id": "t/totem-pole",
+        "word": "Totem pole",
+        "slug": "totem-pole",
+        "letter": "t",
+        "caption": "A rare feline formation where multiple cats align into one tall creature to improve surveillance and increase the chance of receiving snacks.",
+        "created_at": "2026-05-13T10:05:39+00:00",
+        "updated_at": "2026-05-13T10:05:39+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/terminaljunkie/14946568013/",
+            "image_url": "https://live.staticflickr.com/3935/14946568013_ff412498e5_o.jpg",
+            "author": "Luke Campbell",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/terminaljunkie/14946568013/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/t/totem-pole.jpg",
+                "width": 4553,
+                "height": 4000,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/t/totem-pole.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/t/totem-pole.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
         "id": "t/trunk",
         "word": "Trunk",
         "slug": "trunk",
@@ -65,6 +101,42 @@
             },
             "thumb": {
                 "path": "data/thumbs/t/trunk.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "t/tussock",
+        "word": "Tussock",
+        "slug": "tussock",
+        "letter": "t",
+        "caption": "Lumpy grass clump with moderate hiding value. Humans call it \"landscaping\", which is generous.",
+        "created_at": "2026-05-13T10:14:15+00:00",
+        "updated_at": "2026-05-13T10:14:15+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/hisashiv/14166050062/",
+            "image_url": "https://live.staticflickr.com/7431/14166050062_5b2e913663_o.jpg",
+            "author": "Hisashi",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/hisashiv/14166050062/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/t/tussock.jpg",
+                "width": 2144,
+                "height": 1424,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/t/tussock.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/t/tussock.jpg",
                 "width": 240,
                 "height": 240
             }

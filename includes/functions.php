@@ -5,7 +5,7 @@ function h(string $value): string {
     return htmlspecialchars($value, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 }
 
-function wbc_setting(string $key, mixed $default = null): mixed {
+function wbc_setting(string $key, $default = null) {
     global $wbc_settings;
     return $wbc_settings[$key] ?? $default;
 }
@@ -15,10 +15,26 @@ function wbc_post_string(string $key, string $default = ''): string {
     return is_scalar($value) ? trim((string)$value) : $default;
 }
 
+function wbc_starts_with(string $haystack, string $needle): bool {
+    if ($needle === '') {
+        return true;
+    }
+
+    return strpos($haystack, $needle) === 0;
+}
+
+function wbc_contains(string $haystack, string $needle): bool {
+    if ($needle === '') {
+        return true;
+    }
+
+    return strpos($haystack, $needle) !== false;
+}
+
 function wbc_repo_relpath(string $absPath): string {
     $prefix = rtrim(str_replace('\\', '/', WBC_ROOT), '/') . '/';
     $absPath = str_replace('\\', '/', $absPath);
-    if (str_starts_with($absPath, $prefix)) {
+    if (wbc_starts_with($absPath, $prefix)) {
         return substr($absPath, strlen($prefix));
     }
     return $absPath;
@@ -166,8 +182,17 @@ function wbc_detect_curl_binary(): string {
     throw new RuntimeException('curl was not found.');
 }
 
+function wbc_build_shell_command(array $cmd): string {
+    $parts = [];
+    foreach ($cmd as $part) {
+        $parts[] = escapeshellarg((string)$part);
+    }
+
+    return implode(' ', $parts);
+}
+
 function wbc_run_process(array $cmd): array {
-    $proc = proc_open($cmd, [
+    $proc = proc_open(wbc_build_shell_command($cmd), [
         0 => ['pipe', 'r'],
         1 => ['pipe', 'w'],
         2 => ['pipe', 'w'],
@@ -193,13 +218,22 @@ function wbc_run_process(array $cmd): array {
 }
 
 function wbc_image_extension_from_mime(string $mime): string {
-    return match (strtolower($mime)) {
-        'image/jpeg' => 'jpg',
-        'image/png' => 'png',
-        'image/gif' => 'gif',
-        'image/webp' => 'webp',
-        default => 'bin',
-    };
+    $mime = strtolower($mime);
+
+    if ($mime === 'image/jpeg') {
+        return 'jpg';
+    }
+    if ($mime === 'image/png') {
+        return 'png';
+    }
+    if ($mime === 'image/gif') {
+        return 'gif';
+    }
+    if ($mime === 'image/webp') {
+        return 'webp';
+    }
+
+    return 'bin';
 }
 
 function wbc_square_target(string $sourceAbs, string $destAbs, int $size): void {
@@ -233,8 +267,10 @@ function wbc_ratio_target(string $sourceAbs, string $destAbs, int $width, int $h
         $binary,
         $sourceAbs,
         '-auto-orient',
+        '-background',
+        'white',
         '-resize',
-        $width . 'x' . $height . '^',
+        'x' . $height,
         '-gravity',
         'center',
         '-extent',

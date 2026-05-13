@@ -9,9 +9,9 @@ function wbc_is_flickr_url(string $url): bool {
         return false;
     }
 
-    return str_contains($url, 'flickr.com')
-        || str_contains($url, 'staticflickr.com')
-        || str_contains($url, 'live.staticflickr.com');
+    return wbc_contains($url, 'flickr.com')
+        || wbc_contains($url, 'staticflickr.com')
+        || wbc_contains($url, 'live.staticflickr.com');
 }
 
 function wbc_normalize_https_url(string $url): string {
@@ -19,10 +19,10 @@ function wbc_normalize_https_url(string $url): string {
     if ($url === '') {
         return '';
     }
-    if (str_starts_with($url, 'http://')) {
+    if (wbc_starts_with($url, 'http://')) {
         return 'https://' . substr($url, 7);
     }
-    if (str_starts_with($url, '//')) {
+    if (wbc_starts_with($url, '//')) {
         return 'https:' . $url;
     }
     return $url;
@@ -35,7 +35,7 @@ function wbc_probe_flickr_by_url(string $url): array {
         return wbc_probe_static_flickr_asset($url);
     }
 
-    if (str_contains(strtolower($url), 'flickr.com/photos/')) {
+    if (wbc_contains(strtolower($url), 'flickr.com/photos/')) {
         return wbc_probe_flickr_photo_page($url);
     }
 
@@ -170,7 +170,7 @@ function wbc_download_image_to_staging(string $url): array {
         finfo_close($finfo);
     }
 
-    if (!str_starts_with($mime, 'image/')) {
+    if (!wbc_starts_with($mime, 'image/')) {
         @unlink($tmp);
         return ['ok' => false, 'tmp' => '', 'mime' => ''];
     }
@@ -180,7 +180,7 @@ function wbc_download_image_to_staging(string $url): array {
 
 function wbc_is_flickr_static_asset_url(string $url): bool {
     $url = strtolower($url);
-    return str_contains($url, 'staticflickr.com') || str_contains($url, 'live.staticflickr.com');
+    return wbc_contains($url, 'staticflickr.com') || wbc_contains($url, 'live.staticflickr.com');
 }
 
 function wbc_extract_flickr_photo_page_meta(string $html, string $fallbackUrl): array {
@@ -340,7 +340,7 @@ function wbc_extract_json_ld_blocks(string $html): array {
     return $blocks;
 }
 
-function wbc_find_json_key_recursive(array $data, string $key): mixed {
+function wbc_find_json_key_recursive(array $data, string $key) {
     foreach ($data as $k => $v) {
         if ($k === $key) {
             return $v;
