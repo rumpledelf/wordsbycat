@@ -1,0 +1,38 @@
+[
+    {
+        "id": "o/overweight",
+        "word": "Overweight",
+        "slug": "overweight",
+        "letter": "o",
+        "caption": "Sufficient insulation for winter naps. Humans, predictably, treat it as a crisis.",
+        "created_at": "2026-05-11T10:56:08+00:00",
+        "updated_at": "2026-05-11T10:56:08+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/trippchicago/1076657776/",
+            "image_url": "https://live.staticflickr.com/1340/1076657776_eb7c707463_o.jpg",
+            "author": "Tripp",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/trippchicago/1076657776/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/o/overweight.jpg",
+                "width": 1792,
+                "height": 1200,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/o/overweight.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/o/overweight.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    }
+]

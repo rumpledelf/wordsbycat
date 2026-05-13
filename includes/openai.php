@@ -10,7 +10,7 @@ function wbc_openai_project(): string {
 }
 
 function wbc_openai_model(): string {
-    return trim((string)wbc_setting('openai_text_model', 'gpt-5.4-nano'));
+    return trim((string)wbc_setting('openai_text_model', 'gpt-5.4'));
 }
 
 function wbc_openai_is_configured(): bool {

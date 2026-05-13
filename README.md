@@ -21,7 +21,7 @@ Small local tool plus static compiler for a gallery of stupid words illustrated 
 ## Local Setup
 
 1. Copy `includes/settings.local.php.example` to `includes/settings.local.php`
-2. Put your OpenAI key and prompt in that file
+2. Put your OpenAI key, OpenAI project id, and prompt in that file
 3. Adjust model or image sizes there if needed
 
 The prompt and anything private belong in `includes/settings.local.php`, not in committed files.
