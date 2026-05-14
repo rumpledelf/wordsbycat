@@ -1,0 +1,38 @@
+[
+    {
+        "id": "q/quarters",
+        "word": "Quarters",
+        "slug": "quarters",
+        "letter": "q",
+        "caption": "One large cat, sliced into 4 equal smaller cats. Or something.",
+        "created_at": "2026-05-14T11:29:39+00:00",
+        "updated_at": "2026-05-14T11:29:39+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/kaibara/312855876/",
+            "image_url": "https://live.staticflickr.com/111/312855876_a1eac056c1_o.jpg",
+            "author": "Umberto Salvagnin",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/kaibara/312855876/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/q/quarters.jpg",
+                "width": 1280,
+                "height": 768,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/q/quarters.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/q/quarters.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    }
+]

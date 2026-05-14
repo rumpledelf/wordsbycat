@@ -36,6 +36,510 @@
         }
     },
     {
+        "id": "s/saucepan",
+        "word": "Saucepan",
+        "slug": "saucepan",
+        "letter": "s",
+        "caption": "Generally not a good place for cats to sleep. Humans put these in very hot places, where they make food for us to eat.",
+        "created_at": "2026-05-14T23:02:21+00:00",
+        "updated_at": "2026-05-14T23:02:21+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/pauldineen/362095387/",
+            "image_url": "https://live.staticflickr.com/160/362095387_5947744f62_3k.jpg",
+            "author": "Paul L Dineen",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/pauldineen/362095387/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/s/saucepan.jpg",
+                "width": 2560,
+                "height": 1920,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/s/saucepan.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/s/saucepan.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "s/scissors",
+        "word": "Scissors",
+        "slug": "scissors",
+        "letter": "s",
+        "caption": "Scissors are just a harmless toy, right?",
+        "created_at": "2026-05-14T23:07:44+00:00",
+        "updated_at": "2026-05-14T23:07:44+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/featherweatherk/5264459096/",
+            "image_url": "https://live.staticflickr.com/5089/5264459096_115caf292a_o.jpg",
+            "author": "Heather Kaweck",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/featherweatherk/5264459096/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/s/scissors.jpg",
+                "width": 3264,
+                "height": 2448,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/s/scissors.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/s/scissors.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "s/set-top-box",
+        "word": "Set top box",
+        "slug": "set-top-box",
+        "letter": "s",
+        "caption": "Set top boxes are warm, convenient places designed for cats.",
+        "created_at": "2026-05-14T23:08:25+00:00",
+        "updated_at": "2026-05-14T23:08:25+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/filippo_salamone/4065366429/",
+            "image_url": "https://live.staticflickr.com/2735/4065366429_a8e34f17a3_o.jpg",
+            "author": "Filippo Salamone",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/filippo_salamone/4065366429/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/s/set-top-box.jpg",
+                "width": 4288,
+                "height": 2848,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/s/set-top-box.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/s/set-top-box.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "s/shadow",
+        "word": "Shadow",
+        "slug": "shadow",
+        "letter": "s",
+        "caption": "A simple way to get two cats from one. The second cat is sadly two dimensional and monochrome.",
+        "created_at": "2026-05-14T23:10:43+00:00",
+        "updated_at": "2026-05-14T23:10:43+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/29233640@N07/3696268211/",
+            "image_url": "https://live.staticflickr.com/2453/3696268211_ae3b07e8cc_3k.jpg",
+            "author": "Robert Couse-Baker",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/29233640@N07/3696268211/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/s/shadow.jpg",
+                "width": 3000,
+                "height": 2100,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/s/shadow.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/s/shadow.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "s/shafts",
+        "word": "Shafts",
+        "slug": "shafts",
+        "letter": "s",
+        "caption": "If you are not already striped, humans invented blinds so we can pretend.",
+        "created_at": "2026-05-14T23:11:41+00:00",
+        "updated_at": "2026-05-14T23:11:41+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/sarahakabmg/4029583296/",
+            "image_url": "https://live.staticflickr.com/2618/4029583296_0075a97011_o.jpg",
+            "author": "S. J. Pyrotechnic",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/sarahakabmg/4029583296/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/s/shafts.jpg",
+                "width": 2151,
+                "height": 1866,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/s/shafts.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/s/shafts.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "s/silhouette",
+        "word": "Silhouette",
+        "slug": "silhouette",
+        "letter": "s",
+        "caption": "Undeniably feline.",
+        "created_at": "2026-05-14T23:12:45+00:00",
+        "updated_at": "2026-05-14T23:12:45+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/higgystfc/1074590008/",
+            "image_url": "https://live.staticflickr.com/1021/1074590008_d1fdc0d4e1_o.jpg",
+            "author": "HiggySTFC",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/higgystfc/1074590008/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/s/silhouette.jpg",
+                "width": 1861,
+                "height": 2175,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/s/silhouette.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/s/silhouette.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "s/sink",
+        "word": "Sink",
+        "slug": "sink",
+        "letter": "s",
+        "caption": "Cat sized, cat shaped, very comfortable, why do humans have to spoil it with a faucet?",
+        "created_at": "2026-05-14T23:13:17+00:00",
+        "updated_at": "2026-05-14T23:13:17+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/kretyen/2740694473/",
+            "image_url": "https://live.staticflickr.com/3177/2740694473_bab0f8e387_o.jpg",
+            "author": "Ken Bosma",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/kretyen/2740694473/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/s/sink.jpg",
+                "width": 2822,
+                "height": 1881,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/s/sink.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/s/sink.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "s/small",
+        "word": "Small",
+        "slug": "small",
+        "letter": "s",
+        "caption": "From little things big things grow.",
+        "created_at": "2026-05-14T23:15:05+00:00",
+        "updated_at": "2026-05-14T23:15:05+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/31878512@N06/3356955429/",
+            "image_url": "https://live.staticflickr.com/3553/3356955429_fca26b7bc5_o.jpg",
+            "author": "Neal Fowler",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/31878512@N06/3356955429/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/s/small.jpg",
+                "width": 3888,
+                "height": 2592,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/s/small.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/s/small.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "s/sock-drawer",
+        "word": "Sock drawer",
+        "slug": "sock-drawer",
+        "letter": "s",
+        "caption": "Cats are masters of camouflage, and can look exactly like a sock or a pair of underpants when the need arises.",
+        "created_at": "2026-05-14T23:15:47+00:00",
+        "updated_at": "2026-05-14T23:15:47+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/remysharp/1163289602/",
+            "image_url": "https://live.staticflickr.com/1116/1163289602_acf8a2f960_o.jpg",
+            "author": "Remy Sharp",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/remysharp/1163289602/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/s/sock-drawer.jpg",
+                "width": 1280,
+                "height": 853,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/s/sock-drawer.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/s/sock-drawer.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "s/span",
+        "word": "Span",
+        "slug": "span",
+        "letter": "s",
+        "caption": "Even cats can understand highly technical terms like 'span', and can demo them even better.",
+        "created_at": "2026-05-14T23:18:30+00:00",
+        "updated_at": "2026-05-14T23:18:30+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/sarahakabmg/3459350356/",
+            "image_url": "https://live.staticflickr.com/3508/3459350356_677ca3d759_o.jpg",
+            "author": "S. J. Pyrotechnic",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/sarahakabmg/3459350356/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/s/span.jpg",
+                "width": 2532,
+                "height": 1824,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/s/span.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/s/span.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "s/spooning",
+        "word": "Spooning",
+        "slug": "spooning",
+        "letter": "s",
+        "caption": "Warm and sensual.",
+        "created_at": "2026-05-14T23:19:10+00:00",
+        "updated_at": "2026-05-14T23:19:10+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/russellbernice/2641427422/",
+            "image_url": "https://live.staticflickr.com/3173/2641427422_0fe0b78033_o.jpg",
+            "author": "Russell Bernice",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/russellbernice/2641427422/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/s/spooning.jpg",
+                "width": 3072,
+                "height": 2304,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/s/spooning.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/s/spooning.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "s/spout",
+        "word": "Spout",
+        "slug": "spout",
+        "letter": "s",
+        "caption": "Spouts are on teapots. Tea comes out of them. Humans seem to like tea. Cats do not. But we do like teapots.",
+        "created_at": "2026-05-14T23:20:40+00:00",
+        "updated_at": "2026-05-14T23:20:40+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/asolo/3379994130/",
+            "image_url": "https://live.staticflickr.com/3465/3379994130_a6012d81a9_o.jpg",
+            "author": "Alexandr Solo",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/asolo/3379994130/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/s/spout.jpg",
+                "width": 1258,
+                "height": 962,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/s/spout.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/s/spout.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "s/stairs",
+        "word": "Stairs",
+        "slug": "stairs",
+        "letter": "s",
+        "caption": "A human invention that makes it easier to get to high places.",
+        "created_at": "2026-05-14T23:24:08+00:00",
+        "updated_at": "2026-05-14T23:24:08+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/sfj/2456771506/",
+            "image_url": "https://live.staticflickr.com/2309/2456771506_45ec42f70c_o.jpg",
+            "author": "iMorpheus",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/sfj/2456771506/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/s/stairs.jpg",
+                "width": 2401,
+                "height": 2422,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/s/stairs.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/s/stairs.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "s/statue",
+        "word": "Statue",
+        "slug": "statue",
+        "letter": "s",
+        "caption": "Like a real cat, but cold, hard, and doesn't move.",
+        "created_at": "2026-05-14T11:40:08+00:00",
+        "updated_at": "2026-05-14T11:40:08+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/78428166@N00/14002051955/",
+            "image_url": "https://live.staticflickr.com/7376/14002051955_5e07e1090f_5k.jpg",
+            "author": "Tony Alter",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/78428166@N00/14002051955/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/s/statue.jpg",
+                "width": 4608,
+                "height": 3072,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/s/statue.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/s/statue.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
         "id": "s/step",
         "word": "Step",
         "slug": "step",
@@ -66,6 +570,114 @@
             },
             "thumb": {
                 "path": "data/thumbs/s/step.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "s/stump",
+        "word": "Stump",
+        "slug": "stump",
+        "letter": "s",
+        "caption": "A stump is what is left of a tree when you cut it down. Turns a climbing frame into a basking spot.",
+        "created_at": "2026-05-14T23:25:13+00:00",
+        "updated_at": "2026-05-14T23:25:13+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/8552150@N07/3862471167/",
+            "image_url": "https://live.staticflickr.com/3491/3862471167_0c1975f6bd_o.jpg",
+            "author": "angelbenutzer",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/8552150@N07/3862471167/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/s/stump.jpg",
+                "width": 2448,
+                "height": 3264,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/s/stump.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/s/stump.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "s/sunglasses",
+        "word": "Sunglasses",
+        "slug": "sunglasses",
+        "letter": "s",
+        "caption": "Sunglasses stop the sun from getting in human’s eyes. Sleeping all day is more effective.",
+        "created_at": "2026-05-14T23:25:49+00:00",
+        "updated_at": "2026-05-14T23:25:49+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/macnolete/984651877/",
+            "image_url": "https://live.staticflickr.com/1381/984651877_ee704da6fb_b.jpg",
+            "author": "Macnolete",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/macnolete/984651877/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/s/sunglasses.jpg",
+                "width": 1024,
+                "height": 768,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/s/sunglasses.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/s/sunglasses.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "s/sunshine",
+        "word": "Sunshine",
+        "slug": "sunshine",
+        "letter": "s",
+        "caption": "Broad range, easily available heat source made just for cats. Unfortunately it is only available during the daytime, and the nighttime substitute is just not very good at all.",
+        "created_at": "2026-05-14T23:26:47+00:00",
+        "updated_at": "2026-05-14T23:26:47+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/cowlet/250405210/",
+            "image_url": "https://live.staticflickr.com/93/250405210_f1d914b1e8_o.jpg",
+            "author": "Victoria Catterson",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/cowlet/250405210/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/s/sunshine.jpg",
+                "width": 2272,
+                "height": 1704,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/s/sunshine.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/s/sunshine.jpg",
                 "width": 240,
                 "height": 240
             }

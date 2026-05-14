@@ -1,5 +1,113 @@
 [
     {
+        "id": "t/tail",
+        "word": "Tail",
+        "slug": "tail",
+        "letter": "t",
+        "caption": "Humans don’t have tails. This is yet another reason that humans are inferior to cats.",
+        "created_at": "2026-05-14T22:47:07+00:00",
+        "updated_at": "2026-05-14T22:47:07+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/sis/356662360/",
+            "image_url": "https://live.staticflickr.com/132/356662360_f9a8af7e24_3k.jpg",
+            "author": "Jackie",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/sis/356662360/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/t/tail.jpg",
+                "width": 2572,
+                "height": 2046,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/t/tail.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/t/tail.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "t/teapot",
+        "word": "Teapot",
+        "slug": "teapot",
+        "letter": "t",
+        "caption": "Warm, awkwardly shaped object you cannot sit on. Humans remain absurdly protective because it allegedly pours things.",
+        "created_at": "2026-05-14T11:57:24+00:00",
+        "updated_at": "2026-05-14T11:57:24+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/spilt-milk/7280346252/",
+            "image_url": "https://live.staticflickr.com/7088/7280346252_c144a02c29_o.jpg",
+            "author": "yoppy",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/spilt-milk/7280346252/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/t/teapot.jpg",
+                "width": 3947,
+                "height": 2630,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/t/teapot.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/t/teapot.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "t/tin-foil-hat",
+        "word": "Tin foil hat",
+        "slug": "tin-foil-hat",
+        "letter": "t",
+        "caption": "Tin foil hats block thought waves. Humans generally can’t read cat’s minds anyway so cats don’t need them. Cats, however, can control humans so this cat’s human is clearly trying to get a break from being a cat servant.",
+        "created_at": "2026-05-14T22:47:51+00:00",
+        "updated_at": "2026-05-14T22:47:51+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/34668411@N06/3218723201/",
+            "image_url": "https://live.staticflickr.com/3310/3218723201_8b7a38c81e_h.jpg",
+            "author": "catgoesmurp",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/34668411@N06/3218723201/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/t/tin-foil-hat.jpg",
+                "width": 1600,
+                "height": 1200,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/t/tin-foil-hat.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/t/tin-foil-hat.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
         "id": "t/tire",
         "word": "Tire",
         "slug": "tire",
@@ -30,6 +138,78 @@
             },
             "thumb": {
                 "path": "data/thumbs/t/tire.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "t/toilet",
+        "word": "Toilet",
+        "slug": "toilet",
+        "letter": "t",
+        "caption": "Just another place to sleep until they put water in there.",
+        "created_at": "2026-05-14T22:48:33+00:00",
+        "updated_at": "2026-05-14T22:48:33+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/86886338@N00/2404069584/",
+            "image_url": "https://live.staticflickr.com/3194/2404069584_1e99808ac1_o.jpg",
+            "author": "Jim",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "",
+            "submitted_url": "https://www.flickr.com/photos/86886338@N00/2404069584/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/t/toilet.jpg",
+                "width": 3018,
+                "height": 2259,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/t/toilet.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/t/toilet.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "t/toilet-paper",
+        "word": "Toilet paper",
+        "slug": "toilet-paper",
+        "letter": "t",
+        "caption": "Toilet paper is stored on a fitting designed for the maximum fun while removing it. Humans are very inventive when it comes to places to store cat toys.",
+        "created_at": "2026-05-14T22:51:09+00:00",
+        "updated_at": "2026-05-14T22:51:09+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/justinbaeder/4180899850/",
+            "image_url": "https://live.staticflickr.com/2589/4180899850_dc2a82613f_h.jpg",
+            "author": "Justin Baeder",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/justinbaeder/4180899850/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/t/toilet-paper.jpg",
+                "width": 1440,
+                "height": 957,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/t/toilet-paper.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/t/toilet-paper.jpg",
                 "width": 240,
                 "height": 240
             }

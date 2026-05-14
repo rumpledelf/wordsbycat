@@ -1,0 +1,74 @@
+[
+    {
+        "id": "e/easter",
+        "word": "Easter",
+        "slug": "easter",
+        "letter": "e",
+        "caption": "Plastic eggs, chocolate eggs, bunnies, humans are a little odd.",
+        "created_at": "2026-05-14T09:56:04+00:00",
+        "updated_at": "2026-05-14T09:56:04+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/traveloriented/34066016115/",
+            "image_url": "https://live.staticflickr.com/2876/34066016115_53fc8e70d5_o.jpg",
+            "author": "travel oriented",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/traveloriented/34066016115/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/e/easter.jpg",
+                "width": 4592,
+                "height": 3064,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/e/easter.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/e/easter.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "e/egg",
+        "word": "Egg",
+        "slug": "egg",
+        "letter": "e",
+        "caption": "Best served with the shell off. Raw, cooked, don’t care. Egg is good.",
+        "created_at": "2026-05-14T09:52:57+00:00",
+        "updated_at": "2026-05-14T09:52:57+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/shan213/6572910013/",
+            "image_url": "https://live.staticflickr.com/7024/6572910013_77926c2bac_o.jpg",
+            "author": "Shannon McGee",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/shan213/6572910013/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/e/egg.jpg",
+                "width": 4608,
+                "height": 3456,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/e/egg.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/e/egg.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    }
+]

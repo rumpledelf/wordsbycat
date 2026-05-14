@@ -1,0 +1,38 @@
+[
+    {
+        "id": "z/zoo",
+        "word": "Zoo",
+        "slug": "zoo",
+        "letter": "z",
+        "caption": "A place where bigger cats are kept, so they don’t eat humans.",
+        "created_at": "2026-05-14T11:41:02+00:00",
+        "updated_at": "2026-05-14T11:41:02+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/emrank/3550659980/",
+            "image_url": "https://live.staticflickr.com/3396/3550659980_4a9247360d_o.jpg",
+            "author": "Emran Kassim",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/emrank/3550659980/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/z/zoo.jpg",
+                "width": 3264,
+                "height": 2448,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/z/zoo.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/z/zoo.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    }
+]

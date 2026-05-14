@@ -1,0 +1,218 @@
+[
+    {
+        "id": "d/deck",
+        "word": "Deck",
+        "slug": "deck",
+        "letter": "d",
+        "caption": "Decks are large sheltered expanses of wood that humans often lay outside their houses for the use of cats.",
+        "created_at": "2026-05-14T09:48:58+00:00",
+        "updated_at": "2026-05-14T09:48:58+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/srboisvert/4014603062/",
+            "image_url": "https://live.staticflickr.com/2642/4014603062_5575a02d75_3k.jpg",
+            "author": "stephen boisvert",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/srboisvert/4014603062/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/d/deck.jpg",
+                "width": 2576,
+                "height": 1932,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/d/deck.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/d/deck.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "d/desaturated",
+        "word": "Desaturated",
+        "slug": "desaturated",
+        "letter": "d",
+        "caption": "When you turn down the color output on the world.",
+        "created_at": "2026-05-14T11:03:25+00:00",
+        "updated_at": "2026-05-14T11:03:25+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/gamikun/53367672046/",
+            "image_url": "https://live.staticflickr.com/65535/53367672046_25e6a2771d_o.jpg",
+            "author": "Gamaliel Espinoza Macedo",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/gamikun/53367672046/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/d/desaturated.jpg",
+                "width": 5609,
+                "height": 3739,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/d/desaturated.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/d/desaturated.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "d/dinghy",
+        "word": "Dinghy",
+        "slug": "dinghy",
+        "letter": "d",
+        "caption": "Dinghys and boats are a means devised by humans to help cats catch water fowl.",
+        "created_at": "2026-05-14T09:49:56+00:00",
+        "updated_at": "2026-05-14T09:49:56+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/zenera/1632738159/",
+            "image_url": "https://live.staticflickr.com/2401/1632738159_9bac4cc432_h.jpg",
+            "author": "zenera",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/zenera/1632738159/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/d/dinghy.jpg",
+                "width": 1491,
+                "height": 1085,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/d/dinghy.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/d/dinghy.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "d/dishwasher",
+        "word": "Dishwasher",
+        "slug": "dishwasher",
+        "letter": "d",
+        "caption": "Creates a convenient ledge to hide under when opened.",
+        "created_at": "2026-05-14T07:47:30+00:00",
+        "updated_at": "2026-05-14T07:47:30+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/seclusivenature/51802946200/",
+            "image_url": "https://live.staticflickr.com/65535/51802946200_e3b92891d2_o.jpg",
+            "author": "Seclusive Nature",
+            "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "submitted_url": "https://www.flickr.com/photos/seclusivenature/51802946200/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/d/dishwasher.jpg",
+                "width": 3333,
+                "height": 2705,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/d/dishwasher.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/d/dishwasher.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "d/drain",
+        "word": "Drain",
+        "slug": "drain",
+        "letter": "d",
+        "caption": "Why can't humans cover these? So much risk of getting your paws wet",
+        "created_at": "2026-05-13T23:38:46+00:00",
+        "updated_at": "2026-05-13T23:38:46+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/christing/6100739829/",
+            "image_url": "https://live.staticflickr.com/6189/6100739829_a352621f05_o.jpg",
+            "author": "Christine Vaufrey",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/christing/6100739829/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/d/drain.jpg",
+                "width": 4752,
+                "height": 3168,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/d/drain.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/d/drain.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "d/duck",
+        "word": "Duck",
+        "slug": "duck",
+        "letter": "d",
+        "caption": "A cat-sized bird, a little too large for eating, but a lot of fun for stalking.",
+        "created_at": "2026-05-14T07:59:27+00:00",
+        "updated_at": "2026-05-14T07:59:27+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/eiriknewth/474679387/",
+            "image_url": "https://live.staticflickr.com/232/474679387_f0fec10911_o.jpg",
+            "author": "Eirik Newth",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/eiriknewth/474679387/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/d/duck.jpg",
+                "width": 1728,
+                "height": 1382,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/d/duck.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/d/duck.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    }
+]

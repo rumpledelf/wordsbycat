@@ -1,5 +1,185 @@
 [
     {
+        "id": "m/mailbox",
+        "word": "Mailbox",
+        "slug": "mailbox",
+        "letter": "m",
+        "caption": "A mailbox is something humans have outside their houses. Other humans put paper in them. Humans with exceptional taste make their mailboxes look like cats.",
+        "created_at": "2026-05-14T10:55:16+00:00",
+        "updated_at": "2026-05-14T10:55:16+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/mikecogh/6106039388/",
+            "image_url": "https://live.staticflickr.com/6073/6106039388_8ce44bc3f0_c.jpg",
+            "author": "Michael Coghlan",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/mikecogh/6106039388/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/m/mailbox.jpg",
+                "width": 705,
+                "height": 720,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/m/mailbox.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/m/mailbox.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "m/medicine",
+        "word": "Medicine",
+        "slug": "medicine",
+        "letter": "m",
+        "caption": "Tastes bad. Best to be avoided.",
+        "created_at": "2026-05-14T10:55:56+00:00",
+        "updated_at": "2026-05-14T10:55:56+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/lachlanrogers/3062745889/",
+            "image_url": "https://live.staticflickr.com/3196/3062745889_ba2eff980f_o.jpg",
+            "author": "Lachlan Rogers",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/lachlanrogers/3062745889/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/m/medicine.jpg",
+                "width": 3008,
+                "height": 2000,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/m/medicine.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/m/medicine.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "m/meow",
+        "word": "Meow",
+        "slug": "meow",
+        "letter": "m",
+        "caption": "It can mean anything you want it to mean. The humans can figure it out for themselves.",
+        "created_at": "2026-05-14T08:04:52+00:00",
+        "updated_at": "2026-05-14T08:04:52+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/drbillydude/51281964680/",
+            "image_url": "https://live.staticflickr.com/65535/51281964680_cbbc1884bc_o.jpg",
+            "author": "B*lly Frank",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/drbillydude/51281964680/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/m/meow.jpg",
+                "width": 7871,
+                "height": 4761,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/m/meow.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/m/meow.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "m/mermaid",
+        "word": "Mermaid",
+        "slug": "mermaid",
+        "letter": "m",
+        "caption": "A mermaid is a half-human, half fish. Note half HUMAN. There is no such thing as a mer-cat, no matter how hard humans try.",
+        "created_at": "2026-05-14T10:56:24+00:00",
+        "updated_at": "2026-05-14T10:56:24+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/halfbisqued/5221857045/",
+            "image_url": "https://live.staticflickr.com/4086/5221857045_f2756b6e35_h.jpg",
+            "author": "Beck Gusler",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/halfbisqued/5221857045/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/m/mermaid.jpg",
+                "width": 1600,
+                "height": 1200,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/m/mermaid.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/m/mermaid.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "m/mirror",
+        "word": "Mirror",
+        "slug": "mirror",
+        "letter": "m",
+        "caption": "Mirrors are strange. Whenever you look at them up close, there is always another cat there, looking back at you.",
+        "created_at": "2026-05-14T10:59:24+00:00",
+        "updated_at": "2026-05-14T10:59:24+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/indianaivy/6536239559/",
+            "image_url": "https://live.staticflickr.com/7031/6536239559_5df195d353_5k.jpg",
+            "author": "Indiana Ivy Nature Photographer",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/indianaivy/6536239559/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/m/mirror.jpg",
+                "width": 4617,
+                "height": 3364,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/m/mirror.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/m/mirror.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
         "id": "m/mismatch",
         "word": "Mismatch",
         "slug": "mismatch",
@@ -30,6 +210,222 @@
             },
             "thumb": {
                 "path": "data/thumbs/m/mismatch.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "m/mixer",
+        "word": "Mixer",
+        "slug": "mixer",
+        "letter": "m",
+        "caption": "A slightly knobbly warm surface to sleep on.",
+        "created_at": "2026-05-14T10:59:47+00:00",
+        "updated_at": "2026-05-14T10:59:47+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/mourner/3306940441/",
+            "image_url": "https://live.staticflickr.com/3422/3306940441_b4d92004ec_o.jpg",
+            "author": "Vladimir Agafonkin",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/mourner/3306940441/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/m/mixer.jpg",
+                "width": 1680,
+                "height": 1120,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/m/mixer.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/m/mixer.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "m/mobile-phone",
+        "word": "Mobile phone",
+        "slug": "mobile-phone",
+        "letter": "m",
+        "caption": "\"I'd like to order a sardine and anchovy pizza please.\"",
+        "created_at": "2026-05-14T11:00:24+00:00",
+        "updated_at": "2026-05-14T11:00:24+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/photofarmer/1840882827/",
+            "image_url": "https://live.staticflickr.com/2025/1840882827_dbf8972476_o.jpg",
+            "author": "Dwight Sipler",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/photofarmer/1840882827/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/m/mobile-phone.jpg",
+                "width": 3872,
+                "height": 2592,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/m/mobile-phone.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/m/mobile-phone.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "m/motherboard",
+        "word": "Motherboard",
+        "slug": "motherboard",
+        "letter": "m",
+        "caption": "Motherboards come in boxes that are clearly designed to be the right size for cats to sleep in. Purveyors of fine computer components are so thoughtful in this regard.",
+        "created_at": "2026-05-14T11:01:09+00:00",
+        "updated_at": "2026-05-14T11:01:09+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/klmircea/2309823610/",
+            "image_url": "https://live.staticflickr.com/3197/2309823610_40f3ca75e3_o.jpg",
+            "author": "KLMircea",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/klmircea/2309823610/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/m/motherboard.jpg",
+                "width": 3072,
+                "height": 2304,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/m/motherboard.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/m/motherboard.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "m/mug",
+        "word": "Mug",
+        "slug": "mug",
+        "letter": "m",
+        "caption": "Mugs sometimes contain drinks that are quite tasty. They are just the right size to fit a cat’s head into.",
+        "created_at": "2026-05-14T11:05:52+00:00",
+        "updated_at": "2026-05-14T11:05:52+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/evapro/391054459/",
+            "image_url": "https://live.staticflickr.com/179/391054459_4f6aada599_o.jpg",
+            "author": "eva101",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/evapro/391054459/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/m/mug.jpg",
+                "width": 2066,
+                "height": 1731,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/m/mug.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/m/mug.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "m/mulch",
+        "word": "Mulch",
+        "slug": "mulch",
+        "letter": "m",
+        "caption": "Mulch covers the ground, keeps the soil moist and makes it much easier for cats to camouflage in human backyards.",
+        "created_at": "2026-05-14T11:06:39+00:00",
+        "updated_at": "2026-05-14T11:06:39+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/mperich/5130644743/",
+            "image_url": "https://live.staticflickr.com/1262/5130644743_8e793d7593_o.jpg",
+            "author": "Matt Perich",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/mperich/5130644743/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/m/mulch.jpg",
+                "width": 3771,
+                "height": 2505,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/m/mulch.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/m/mulch.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "m/mushroom",
+        "word": "Mushroom",
+        "slug": "mushroom",
+        "letter": "m",
+        "caption": "A very odd looking, inedible plant. Also sometimes copied by humans as chimneys.",
+        "created_at": "2026-05-14T11:08:15+00:00",
+        "updated_at": "2026-05-14T11:08:15+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/newtown_grafitti/5925624765/",
+            "image_url": "https://live.staticflickr.com/6015/5925624765_7cf6eb0420_o.jpg",
+            "author": "Newtown grafitti",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/newtown_grafitti/5925624765/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/m/mushroom.jpg",
+                "width": 1200,
+                "height": 934,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/m/mushroom.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/m/mushroom.jpg",
                 "width": 240,
                 "height": 240
             }

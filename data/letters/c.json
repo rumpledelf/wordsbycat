@@ -468,6 +468,42 @@
         }
     },
     {
+        "id": "c/corner",
+        "word": "Corner",
+        "slug": "corner",
+        "letter": "c",
+        "caption": "Corners are not good. It is harder to get away when you are in a corner.",
+        "created_at": "2026-05-14T11:50:50+00:00",
+        "updated_at": "2026-05-14T11:50:50+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/o_0/50146411538/",
+            "image_url": "https://live.staticflickr.com/65535/50146411538_8352708940_o.jpg",
+            "author": "Guilhem Vellut",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/o_0/50146411538/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/c/corner.jpg",
+                "width": 5472,
+                "height": 3648,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/c/corner.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/c/corner.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
         "id": "c/curry",
         "word": "Curry",
         "slug": "curry",

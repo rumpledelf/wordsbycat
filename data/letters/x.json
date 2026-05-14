@@ -1,0 +1,38 @@
+[
+    {
+        "id": "x/x-ray",
+        "word": "X-ray",
+        "slug": "x-ray",
+        "letter": "x",
+        "caption": "A human magic for finding out what is wrong on the inside.",
+        "created_at": "2026-05-14T11:43:55+00:00",
+        "updated_at": "2026-05-14T11:43:55+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/art-sarah/345119755/",
+            "image_url": "https://live.staticflickr.com/140/345119755_928f1e52e1_o.jpg",
+            "author": "ArtBrom",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/art-sarah/345119755/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/x/x-ray.jpg",
+                "width": 1246,
+                "height": 730,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/x/x-ray.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/x/x-ray.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    }
+]

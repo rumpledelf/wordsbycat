@@ -1,0 +1,182 @@
+[
+    {
+        "id": "k/kaleidoscope",
+        "word": "Kaleidoscope",
+        "slug": "kaleidoscope",
+        "letter": "k",
+        "caption": "So many cats!!",
+        "created_at": "2026-05-14T10:39:25+00:00",
+        "updated_at": "2026-05-14T10:39:25+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/cibomahto/2936791605/",
+            "image_url": "https://live.staticflickr.com/3056/2936791605_52798d8b78_o.jpg",
+            "author": "Matt Mets",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/cibomahto/2936791605/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/k/kaleidoscope.jpg",
+                "width": 1280,
+                "height": 848,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/k/kaleidoscope.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/k/kaleidoscope.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "k/keyboard",
+        "word": "Keyboard",
+        "slug": "keyboard",
+        "letter": "k",
+        "caption": "If you sleep on one of these, your human will pay you more attention.",
+        "created_at": "2026-05-14T10:39:58+00:00",
+        "updated_at": "2026-05-14T10:39:58+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/emailer/3636704827/",
+            "image_url": "https://live.staticflickr.com/3645/3636704827_41d0e551df_3k.jpg",
+            "author": "emailer",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/emailer/3636704827/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/k/keyboard.jpg",
+                "width": 3072,
+                "height": 2304,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/k/keyboard.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/k/keyboard.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "k/kiss",
+        "word": "Kiss",
+        "slug": "kiss",
+        "letter": "k",
+        "caption": "An odd thing humans do with their lips.",
+        "created_at": "2026-05-14T10:42:46+00:00",
+        "updated_at": "2026-05-14T10:42:46+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/scrapstothefuture/138814555/",
+            "image_url": "https://live.staticflickr.com/51/138814555_caa812be51_o.jpg",
+            "author": "allison",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/scrapstothefuture/138814555/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/k/kiss.jpg",
+                "width": 2272,
+                "height": 1704,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/k/kiss.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/k/kiss.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "k/kitchen",
+        "word": "Kitchen",
+        "slug": "kitchen",
+        "letter": "k",
+        "caption": "A kitchen is a place that humans go to when their cat needs to prepare food for them.",
+        "created_at": "2026-05-14T10:43:12+00:00",
+        "updated_at": "2026-05-14T10:43:12+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/sergemelki/3141931713/",
+            "image_url": "https://live.staticflickr.com/3265/3141931713_0ea4d7ae7d_o.jpg",
+            "author": "Serge Melki",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/sergemelki/3141931713/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/k/kitchen.jpg",
+                "width": 2297,
+                "height": 1526,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/k/kitchen.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/k/kitchen.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "k/kite",
+        "word": "Kite",
+        "slug": "kite",
+        "letter": "k",
+        "caption": "A kite is something humans fly in the sky. Humans with superior taste choose to make their kites in the shape of cats.",
+        "created_at": "2026-05-14T10:50:12+00:00",
+        "updated_at": "2026-05-14T10:50:12+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/vwescape/3622016849/",
+            "image_url": "https://live.staticflickr.com/3113/3622016849_473a0e75d7_o.jpg",
+            "author": "VW Escape",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/vwescape/3622016849/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/k/kite.jpg",
+                "width": 2045,
+                "height": 1358,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/k/kite.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/k/kite.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    }
+]

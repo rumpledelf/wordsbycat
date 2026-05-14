@@ -28,6 +28,7 @@ BANNER_CANDIDATES = [
     DATA_DIR / "site" / "banner.png",
     DATA_DIR / "site" / "banner.webp",
 ]
+CAPTION_EMPHASIS_RE = re.compile(r"\*([^*\n]+)\*")
 
 
 @dataclass
@@ -264,7 +265,7 @@ def render_entry_page(entry: Entry, siblings: list[Entry], prev_entry: Entry | N
         <div class="entry-main" data-prev="{prev_path}" data-next="{next_path}">
           <div class="entry-caption">
             <h3 class="entry-word">{escape(entry.word)}</h3>
-            <p>{escape(entry.caption)}</p>
+            <p>{render_caption_html(entry.caption)}</p>
           </div>
           <figure class="entry-figure">
             <img class="entry-image" src="{entry.main_public_path}" alt="{escape(entry.word)}">
@@ -383,7 +384,7 @@ def render_letter_nav(current_letter: str | None) -> str:
 
 
 def render_thumb_card(entry: Entry, show_caption: bool) -> str:
-    caption_markup = f'<p class="thumb-caption">{escape(entry.caption)}</p>' if show_caption and entry.caption else ""
+    caption_markup = f'<p class="thumb-caption">{render_caption_html(entry.caption)}</p>' if show_caption and entry.caption else ""
     return f"""
     <a class="thumb-card" href="{entry.page_path}">
       <img class="thumb-card-image" src="{entry.thumb_public_path}" alt="{escape(entry.word)}">
@@ -408,6 +409,11 @@ def render_caret_link(entry: Entry | None, direction: str) -> str:
     label = f"{'Previous' if direction == 'prev' else 'Next'}: {entry.word}"
     direction_class = f"caret-link-{direction}"
     return f'<a class="caret-link {direction_class}" href="{entry.page_path}" aria-label="{escape(label)}">{glyph}</a>'
+
+
+def render_caption_html(caption: str) -> str:
+    escaped = escape(caption)
+    return CAPTION_EMPHASIS_RE.sub(r"<em>\1</em>", escaped)
 
 
 def render_provenance(entry: Entry) -> str:
@@ -444,7 +450,8 @@ def render_footer() -> str:
     return (
         '<footer class="site-footer">'
         f'<p class="meta">&copy; <a href="https://armadillosandwich.com">Armadillo Sandwich</a> 2009-{year} / '
-        '<a href="/about/">About</a></p>'
+        '<a href="/about/">About</a> / '
+        '<a href="https://photographicdictionary.com/contact?kind=wordsbycat">Contact</a></p>'
         '</footer>'
     )
 

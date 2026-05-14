@@ -72,6 +72,42 @@
         }
     },
     {
+        "id": "a/ankle",
+        "word": "Ankle",
+        "slug": "ankle",
+        "letter": "a",
+        "caption": "A little bony. Will cuddle anyway.",
+        "created_at": "2026-05-14T12:08:23+00:00",
+        "updated_at": "2026-05-14T12:08:23+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/ironypoisoning/25704522432/",
+            "image_url": "https://live.staticflickr.com/1528/25704522432_843a7f613d_o.jpg",
+            "author": "ironypoisoning",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/ironypoisoning/25704522432/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/a/ankle.jpg",
+                "width": 5184,
+                "height": 3456,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/a/ankle.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/a/ankle.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
         "id": "a/annoy",
         "word": "Annoy",
         "slug": "annoy",

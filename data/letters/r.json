@@ -1,0 +1,254 @@
+[
+    {
+        "id": "r/radiator",
+        "word": "Radiator",
+        "slug": "radiator",
+        "letter": "r",
+        "caption": "Slightly uncomfortable, but worth it for the warmth.",
+        "created_at": "2026-05-14T11:31:05+00:00",
+        "updated_at": "2026-05-14T11:31:05+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/geoffeg/2412562664/",
+            "image_url": "https://live.staticflickr.com/3085/2412562664_8dfc80f783_o.jpg",
+            "author": "Geoffrey Gallaway",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/geoffeg/2412562664/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/r/radiator.jpg",
+                "width": 3691,
+                "height": 2768,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/r/radiator.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/r/radiator.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "r/reflection",
+        "word": "Reflection",
+        "slug": "reflection",
+        "letter": "r",
+        "caption": "Like a shadow, but with more colors.",
+        "created_at": "2026-05-14T11:02:05+00:00",
+        "updated_at": "2026-05-14T11:02:05+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/tiakatty/31947701002/",
+            "image_url": "https://live.staticflickr.com/492/31947701002_dd746cde77_o.jpg",
+            "author": "Katty Piazza",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/tiakatty/31947701002/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/r/reflection.jpg",
+                "width": 2000,
+                "height": 1339,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/r/reflection.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/r/reflection.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "r/relax",
+        "word": "Relax",
+        "slug": "relax",
+        "letter": "r",
+        "caption": "Cats are very good at relaxing. So much better at it than humans.",
+        "created_at": "2026-05-14T11:32:26+00:00",
+        "updated_at": "2026-05-14T11:32:26+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/enixii/1929917641/",
+            "image_url": "https://live.staticflickr.com/2274/1929917641_c39278e26e_o.jpg",
+            "author": "chia ying Yang",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/enixii/1929917641/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/r/relax.jpg",
+                "width": 2048,
+                "height": 1361,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/r/relax.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/r/relax.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "r/rocket",
+        "word": "Rocket",
+        "slug": "rocket",
+        "letter": "r",
+        "caption": "Rockets are useless toys made by humans. They go up, not across, so you can’t chase them.",
+        "created_at": "2026-05-14T11:33:03+00:00",
+        "updated_at": "2026-05-14T11:33:03+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/jurvetson/4906048881/",
+            "image_url": "https://live.staticflickr.com/4116/4906048881_65741fe566_o.jpg",
+            "author": "Steve Jurvetson",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/jurvetson/4906048881/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/r/rocket.jpg",
+                "width": 1759,
+                "height": 1962,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/r/rocket.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/r/rocket.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "r/roll",
+        "word": "Roll",
+        "slug": "roll",
+        "letter": "r",
+        "caption": "Humans roll things up and make tunnels for cats to play in.",
+        "created_at": "2026-05-14T10:30:43+00:00",
+        "updated_at": "2026-05-14T10:30:43+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/ansik/156708151/",
+            "image_url": "https://live.staticflickr.com/59/156708151_bc579c8e86_o.jpg",
+            "author": "Anssi Koskinen",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/ansik/156708151/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/r/roll.jpg",
+                "width": 1000,
+                "height": 750,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/r/roll.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/r/roll.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "r/rose",
+        "word": "Rose",
+        "slug": "rose",
+        "letter": "r",
+        "caption": "Humans like these. They are prickly and taste bad.",
+        "created_at": "2026-05-14T11:34:17+00:00",
+        "updated_at": "2026-05-14T11:34:17+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/bahadorjn/15312360171/",
+            "image_url": "https://live.staticflickr.com/5556/15312360171_05767e3b06_o.jpg",
+            "author": "Bahador",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/bahadorjn/15312360171/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/r/rose.jpg",
+                "width": 3264,
+                "height": 2611,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/r/rose.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/r/rose.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "r/rump",
+        "word": "Rump",
+        "slug": "rump",
+        "letter": "r",
+        "caption": "Rumps are big and warm and comfortable and hairy and would make good places to sleep if they were not attached to large moving objects.",
+        "created_at": "2026-05-14T11:34:47+00:00",
+        "updated_at": "2026-05-14T11:34:47+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/adamarthur/3620403/",
+            "image_url": "https://live.staticflickr.com/2/3620403_b7cfd3f9c3_o.jpg",
+            "author": "Adam Smith",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/adamarthur/3620403/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/r/rump.jpg",
+                "width": 2048,
+                "height": 1536,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/r/rump.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/r/rump.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    }
+]

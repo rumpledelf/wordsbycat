@@ -36,6 +36,78 @@
         }
     },
     {
+        "id": "b/bandage",
+        "word": "Bandage",
+        "slug": "bandage",
+        "letter": "b",
+        "caption": "Bandages are an annoyance invented by humans to stop cats licking their own injuries.",
+        "created_at": "2026-05-14T10:04:35+00:00",
+        "updated_at": "2026-05-14T10:04:35+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/fruey/3121700709/",
+            "image_url": "https://live.staticflickr.com/3288/3121700709_84c167c2f2_h.jpg",
+            "author": "simon_music",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/fruey/3121700709/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/b/bandage.jpg",
+                "width": 1600,
+                "height": 1200,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/b/bandage.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/b/bandage.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "b/barrel",
+        "word": "Barrel",
+        "slug": "barrel",
+        "letter": "b",
+        "caption": "Just another place for cats to sleep.",
+        "created_at": "2026-05-14T12:03:14+00:00",
+        "updated_at": "2026-05-14T12:03:14+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/usda-rd/53758528345/",
+            "image_url": "https://live.staticflickr.com/65535/53758528345_3e4ebabef8_o.jpg",
+            "author": "USDA Rural Development",
+            "license": "https://creativecommons.org/publicdomain/mark/1.0/",
+            "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+            "submitted_url": "https://www.flickr.com/photos/usda-rd/53758528345/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/b/barrel.jpg",
+                "width": 4275,
+                "height": 2850,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/b/barrel.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/b/barrel.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
         "id": "b/basket",
         "word": "Basket",
         "slug": "basket",
@@ -72,6 +144,42 @@
         }
     },
     {
+        "id": "b/bathtub",
+        "word": "Bathtub",
+        "slug": "bathtub",
+        "letter": "b",
+        "caption": "Adequate sleeping place. Sometimes has water in the bottom to drink. Sometimes is full of water - that should be discouraged if at all possible.",
+        "created_at": "2026-05-14T11:54:32+00:00",
+        "updated_at": "2026-05-14T11:54:32+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/edenpictures/52462405934/",
+            "image_url": "https://live.staticflickr.com/65535/52462405934_f60e2c9840_o.jpg",
+            "author": "Eden, Janine and Jim",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/edenpictures/52462405934/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/b/bathtub.jpg",
+                "width": 4080,
+                "height": 3072,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/b/bathtub.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/b/bathtub.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
         "id": "b/beard",
         "word": "Beard",
         "slug": "beard",
@@ -102,6 +210,42 @@
             },
             "thumb": {
                 "path": "data/thumbs/b/beard.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "b/black",
+        "word": "Black",
+        "slug": "black",
+        "letter": "b",
+        "caption": "A fine colour for absorbing the warmth of the sun while napping outdoors.",
+        "created_at": "2026-05-14T07:58:45+00:00",
+        "updated_at": "2026-05-14T07:58:45+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/evapro/539719106/",
+            "image_url": "https://live.staticflickr.com/1034/539719106_fd6b5d9b18_3k.jpg",
+            "author": "eva101",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/evapro/539719106/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/b/black.jpg",
+                "width": 3008,
+                "height": 2000,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/b/black.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/b/black.jpg",
                 "width": 240,
                 "height": 240
             }
@@ -210,6 +354,42 @@
             },
             "thumb": {
                 "path": "data/thumbs/b/bridge.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "b/bucket",
+        "word": "Bucket",
+        "slug": "bucket",
+        "letter": "b",
+        "caption": "One of many cat-sized objects that humans have created strictly for the use of cats as sleeping places. Although they tend to put water in these, which can be troublesome.",
+        "created_at": "2026-05-14T07:57:47+00:00",
+        "updated_at": "2026-05-14T07:57:47+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/nromagna/5643588854/",
+            "image_url": "https://live.staticflickr.com/5225/5643588854_72c3b51a7b_o.jpg",
+            "author": "Nicola Romagna",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/nromagna/5643588854/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/b/bucket.jpg",
+                "width": 5595,
+                "height": 3730,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/b/bucket.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/b/bucket.jpg",
                 "width": 240,
                 "height": 240
             }

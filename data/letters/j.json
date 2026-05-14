@@ -1,0 +1,110 @@
+[
+    {
+        "id": "j/jacket",
+        "word": "Jacket",
+        "slug": "jacket",
+        "letter": "j",
+        "caption": "Something humans wear to keep cats extra warm.",
+        "created_at": "2026-05-14T07:46:36+00:00",
+        "updated_at": "2026-05-14T07:46:36+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/jmettraux/4068401576/",
+            "image_url": "https://live.staticflickr.com/2435/4068401576_1caaf21897_o.jpg",
+            "author": "jmettraux",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/jmettraux/4068401576/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/j/jacket.jpg",
+                "width": 3648,
+                "height": 2736,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/j/jacket.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/j/jacket.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "j/jar",
+        "word": "Jar",
+        "slug": "jar",
+        "letter": "j",
+        "caption": "Humans keep tasty things in some jars, and nasty things in other jars.",
+        "created_at": "2026-05-14T10:37:11+00:00",
+        "updated_at": "2026-05-14T10:37:11+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/lisazins/42668251925/",
+            "image_url": "https://live.staticflickr.com/920/42668251925_ed613a328c_o.jpg",
+            "author": "Lisa Zins",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "",
+            "submitted_url": "https://www.flickr.com/photos/lisazins/42668251925/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/j/jar.jpg",
+                "width": 1200,
+                "height": 832,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/j/jar.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/j/jar.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "j/jump",
+        "word": "Jump",
+        "slug": "jump",
+        "letter": "j",
+        "caption": "Cats can jump a *lot* higher than humans. Fences are just there for dogs.",
+        "created_at": "2026-05-14T10:37:51+00:00",
+        "updated_at": "2026-05-14T10:37:51+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/77682540@N00/3322708616/",
+            "image_url": "https://live.staticflickr.com/3568/3322708616_568587113b_c.jpg",
+            "author": "Ali T",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/77682540@N00/3322708616/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/j/jump.jpg",
+                "width": 640,
+                "height": 800,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/j/jump.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/j/jump.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    }
+]

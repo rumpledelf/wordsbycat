@@ -341,7 +341,7 @@ $recentEntries = wbc_recent_entries(10);
     <h1>Words by Cat Intake</h1>
     <p>Bucket o'cats: paste a Flickr URL, seed a caption, toss it into the per-letter JSON bucket.</p>
     <div class="compile-bar">
-      <p class="meta">Tosss in as many cats as you want, then compile the static site.</p>
+      <p class="meta">Toss in as many cats as you want, then compile the static site.</p>
       <form method="post">
         <input type="hidden" name="action" value="compile">
         <button type="submit" class="compile">Compile Site</button>

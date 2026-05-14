@@ -1,5 +1,41 @@
 [
     {
+        "id": "h/half-and-half",
+        "word": "Half and half",
+        "slug": "half-and-half",
+        "letter": "h",
+        "caption": "Need a colour scheme? Take a little from column A, a little from column B …",
+        "created_at": "2026-05-14T10:28:19+00:00",
+        "updated_at": "2026-05-14T10:28:19+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/154900400@N05/27940436497/",
+            "image_url": "https://live.staticflickr.com/1727/27940436497_526aa635dd_o.jpg",
+            "author": "Irene Souto",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/154900400@N05/27940436497/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/h/half-and-half.jpg",
+                "width": 700,
+                "height": 700,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/h/half-and-half.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/h/half-and-half.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
         "id": "h/halloween",
         "word": "Halloween",
         "slug": "halloween",
@@ -30,6 +66,294 @@
             },
             "thumb": {
                 "path": "data/thumbs/h/halloween.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "h/handbag",
+        "word": "Handbag",
+        "slug": "handbag",
+        "letter": "h",
+        "caption": "Handbags are places to keep cats, or to keep cat toys. Either will do.",
+        "created_at": "2026-05-14T10:28:55+00:00",
+        "updated_at": "2026-05-14T10:28:55+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/piratealice/2549344963/",
+            "image_url": "https://live.staticflickr.com/3150/2549344963_3ae4b05d65_h.jpg",
+            "author": "Pattie",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/piratealice/2549344963/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/h/handbag.jpg",
+                "width": 1600,
+                "height": 1200,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/h/handbag.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/h/handbag.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "h/hay",
+        "word": "Hay",
+        "slug": "hay",
+        "letter": "h",
+        "caption": "Scratchy but can be comfortable if you really need somewhere to sleep.",
+        "created_at": "2026-05-14T10:29:31+00:00",
+        "updated_at": "2026-05-14T10:29:31+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/11984793@N05/2895209815/",
+            "image_url": "https://live.staticflickr.com/3136/2895209815_eb1e36e7a7_o.jpg",
+            "author": "Miss Baker",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/11984793@N05/2895209815/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/h/hay.jpg",
+                "width": 2304,
+                "height": 3072,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/h/hay.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/h/hay.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "h/hedge",
+        "word": "Hedge",
+        "slug": "hedge",
+        "letter": "h",
+        "caption": "Like a tree, but better to hide in.",
+        "created_at": "2026-05-14T10:30:08+00:00",
+        "updated_at": "2026-05-14T10:30:08+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/crackers93/2350099120/",
+            "image_url": "https://live.staticflickr.com/2404/2350099120_fcb6662650_o.jpg",
+            "author": "Crackers93",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/crackers93/2350099120/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/h/hedge.jpg",
+                "width": 2560,
+                "height": 1920,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/h/hedge.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/h/hedge.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "h/hide",
+        "word": "Hide",
+        "slug": "hide",
+        "letter": "h",
+        "caption": "Concealed space with tactical value. Humans seem surprised when attacked from hiding.",
+        "created_at": "2026-05-13T23:43:13+00:00",
+        "updated_at": "2026-05-13T23:43:13+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/lastquest/1500116799/",
+            "image_url": "https://live.staticflickr.com/2383/1500116799_d40f5f7754_h.jpg",
+            "author": "Daniele Pieroni",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/lastquest/1500116799/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/h/hide.jpg",
+                "width": 1600,
+                "height": 1067,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/h/hide.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/h/hide.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "h/hiss",
+        "word": "Hiss",
+        "slug": "hiss",
+        "letter": "h",
+        "caption": "What better way to show your displeasure than to hiss at someone.",
+        "created_at": "2026-05-14T08:04:05+00:00",
+        "updated_at": "2026-05-14T08:04:05+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/tomitapio/4429298505/",
+            "image_url": "https://live.staticflickr.com/4047/4429298505_61ac947373_h.jpg",
+            "author": "Tomi Tapio",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/tomitapio/4429298505/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/h/hiss.jpg",
+                "width": 1330,
+                "height": 1000,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/h/hiss.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/h/hiss.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "h/hole",
+        "word": "Hole",
+        "slug": "hole",
+        "letter": "h",
+        "caption": "Holes are fun to hide in. Humans make them just for cats.",
+        "created_at": "2026-05-14T10:31:52+00:00",
+        "updated_at": "2026-05-14T10:31:52+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/cornelii/2811389155/",
+            "image_url": "https://live.staticflickr.com/3065/2811389155_080f43f185_o.jpg",
+            "author": "Michael Cornelius",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/cornelii/2811389155/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/h/hole.jpg",
+                "width": 3264,
+                "height": 2448,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/h/hole.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/h/hole.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "h/hood",
+        "word": "Hood",
+        "slug": "hood",
+        "letter": "h",
+        "caption": "A hood is something you put over your head, be it by accident or on purpose.",
+        "created_at": "2026-05-14T10:32:23+00:00",
+        "updated_at": "2026-05-14T10:32:23+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/alamosbasement/3301504173/",
+            "image_url": "https://live.staticflickr.com/3312/3301504173_96557df6ed_b.jpg",
+            "author": "alamosbasement",
+            "license": "https://creativecommons.org/licenses/by/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/alamosbasement/3301504173/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/h/hood.jpg",
+                "width": 1024,
+                "height": 768,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/h/hood.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/h/hood.jpg",
+                "width": 240,
+                "height": 240
+            }
+        }
+    },
+    {
+        "id": "h/hug",
+        "word": "Hug",
+        "slug": "hug",
+        "letter": "h",
+        "caption": "A hug is something cat owners do to their cats when they really like them.",
+        "created_at": "2026-05-14T10:32:54+00:00",
+        "updated_at": "2026-05-14T10:32:54+00:00",
+        "source_type": "flickr",
+        "source": {
+            "page_url": "https://www.flickr.com/photos/sunfox/6651677/",
+            "image_url": "https://live.staticflickr.com/5/6651677_4d7da11a5d_3k.jpg",
+            "author": "Sunny Ripert",
+            "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+            "submitted_url": "https://www.flickr.com/photos/sunfox/6651677/"
+        },
+        "images": {
+            "original": {
+                "path": "data/originals/h/hug.jpg",
+                "width": 2592,
+                "height": 1944,
+                "mime": "image/jpeg"
+            },
+            "main": {
+                "path": "data/derived/h/hug.jpg",
+                "width": 1200,
+                "height": 896
+            },
+            "thumb": {
+                "path": "data/thumbs/h/hug.jpg",
                 "width": 240,
                 "height": 240
             }
