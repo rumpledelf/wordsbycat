@@ -23,12 +23,12 @@ Small local tool plus static compiler for a gallery of stupid words illustrated 
 
 1. Copy `includes/settings.local.php.example` to `includes/settings.local.php`
 2. Put your OpenAI key, OpenAI project id, and prompt in that file
-3. Optionally set `google_tag_id` for site analytics
+3. Optionally set `google_tag_manager_id` for site analytics
 4. Adjust model or image sizes there if needed
 
 The prompt and anything private belong in `includes/settings.local.php`, not in committed files.
 
-If `google_tag_id` is set in `includes/settings.local.php` or `GOOGLE_TAG_ID` is present in the environment, the static compiler will include the Google tag snippet in generated pages.
+If `google_tag_manager_id` is set in `includes/settings.local.php` or `GOOGLE_TAG_MANAGER_ID` is present in the environment, the static compiler will include the Google Tag Manager snippets in generated pages.
 
 ## Local Compatibility
 

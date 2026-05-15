@@ -18,7 +18,9 @@ PUBLIC_DIR = ROOT / "public"
 ABOUT_SITE_SOURCE = DATA_DIR / "site" / "about.html"
 FRONT_TEXT_SOURCE = DATA_DIR / "site" / "front.txt"
 FAVICON_SOURCE = ROOT / "favicon.ico"
+SETTINGS_SOURCE = ROOT / "includes" / "settings.php"
 SETTINGS_LOCAL_SOURCE = ROOT / "includes" / "settings.local.php"
+CNAME_SOURCE = ROOT / "CNAME"
 SITE_TITLE = "Words, by Cat"
 SITE_TAGLINE = "An alphabetical collection of stupid words illustrated by cats."
 ORANGE_LETTERS = {"c", "g", "k", "m", "q", "t", "x", "z"}
@@ -30,7 +32,8 @@ BANNER_CANDIDATES = [
     DATA_DIR / "site" / "banner.webp",
 ]
 CAPTION_EMPHASIS_RE = re.compile(r"\*([^*\n]+)\*")
-GOOGLE_TAG_ID_RE = re.compile(r"""google_tag_id'\]\s*=\s*['"]([^'"]+)['"]""")
+GOOGLE_TAG_MANAGER_ID_RE = re.compile(r"""google_tag_manager_id'\]\s*=\s*['"]([^'"]+)['"]""")
+SITE_URL_RE = re.compile(r"""site_url'\]\s*=\s*['"]([^'"]+)['"]""")
 
 
 @dataclass
@@ -209,7 +212,16 @@ def render_home_page(letters: dict[str, list[Entry]], banner_public_path: str) -
       </div>
     </section>
     """
-    return render_layout("Words, by Cat", body, page_title=None, current_letter=None, is_home=True)
+    social_image = latest[0].main_public_path if latest else (banner_public_path or "")
+    return render_layout(
+        "Words, by Cat",
+        body,
+        page_title=None,
+        current_letter=None,
+        is_home=True,
+        page_path="/",
+        social_image_path=social_image,
+    )
 
 
 def render_about_page(about_html: str) -> str:
@@ -223,7 +235,7 @@ def render_about_page(about_html: str) -> str:
       </div>
     </section>
     """
-    return render_layout("About", body, page_title=None, current_letter=None, is_home=False)
+    return render_layout("About", body, page_title=None, current_letter=None, is_home=False, page_path="/about/")
 
 
 def render_404_page() -> str:
@@ -238,7 +250,7 @@ def render_404_page() -> str:
       </div>
     </section>
     """
-    return render_layout("404", body, page_title=None, current_letter=None, is_home=False)
+    return render_layout("404", body, page_title=None, current_letter=None, is_home=False, page_path="/404.html")
 
 
 def render_htaccess() -> str:
@@ -250,6 +262,7 @@ ErrorDocument 404 /404.html
 
 def render_letter_page(letter: str, entries: list[Entry]) -> str:
     title = letter.upper()
+    social_image = entries[0].main_public_path if entries else ""
     if entries:
         first_entry = entries[0]
         grid = "".join(render_thumb_card(entry, show_caption=True) for entry in entries)
@@ -273,7 +286,15 @@ def render_letter_page(letter: str, entries: list[Entry]) -> str:
           <p class="meta">No cats here yet.</p>
         </section>
         """
-    return render_layout(title, body, page_title=title, current_letter=letter, is_home=False)
+    return render_layout(
+        title,
+        body,
+        page_title=title,
+        current_letter=letter,
+        is_home=False,
+        page_path=f"/{letter}/",
+        social_image_path=social_image,
+    )
 
 
 def render_entry_page(entry: Entry, siblings: list[Entry], prev_entry: Entry | None, next_entry: Entry | None) -> str:
@@ -307,16 +328,33 @@ def render_entry_page(entry: Entry, siblings: list[Entry], prev_entry: Entry | N
       </div>
     </article>
     """
-    return render_layout(entry.word, body, page_title=entry.word, current_letter=entry.letter, is_home=False)
+    return render_layout(
+        entry.word,
+        body,
+        page_title=entry.word,
+        current_letter=entry.letter,
+        is_home=False,
+        page_path=entry.page_path,
+        social_image_path=entry.main_public_path,
+    )
 
 
-def render_layout(title: str, body: str, page_title: str | None, current_letter: str | None, is_home: bool) -> str:
+def render_layout(
+    title: str,
+    body: str,
+    page_title: str | None,
+    current_letter: str | None,
+    is_home: bool,
+    page_path: str,
+    social_image_path: str = "",
+) -> str:
     full_title = SITE_TITLE if title == SITE_TITLE else f"{title} | {SITE_TITLE}"
     nav = render_letter_nav(current_letter)
     header_class = "site-header home-header" if is_home else "site-header"
     page_header = ""
     footer = render_footer()
-    google_tag_markup = render_google_tag()
+    google_tag_manager_head_markup, google_tag_manager_body_markup = render_google_tag_manager()
+    social_meta = render_social_meta(full_title, page_path, social_image_path)
     behavior_script = """
 <script>
 (() => {
@@ -368,14 +406,16 @@ def render_layout(title: str, body: str, page_title: str | None, current_letter:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{escape(full_title)}</title>
   <meta name="description" content="{escape(SITE_TAGLINE)}">
+  {social_meta}
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/styles.css">
-  {google_tag_markup}
+  {google_tag_manager_head_markup}
 </head>
 <body>
+  {google_tag_manager_body_markup}
   <div class="site-shell">
     <div class="site-frame panel">
     <header class="{header_class}">
@@ -409,6 +449,35 @@ def render_letter_nav(current_letter: str | None) -> str:
             f'<a class="{" ".join(classes)}" href="/{letter}/">{escape(letter.upper())}</a>'
         )
     return "".join(items)
+
+
+def render_social_meta(title: str, page_path: str, social_image_path: str) -> str:
+    page_url = absolute_site_url(page_path)
+    image_url = absolute_site_url(social_image_path) if social_image_path else ""
+    tags = [
+        ('link rel="canonical"', page_url, "href"),
+        ('meta property="og:type"', "website", "content"),
+        ('meta property="og:site_name"', SITE_TITLE, "content"),
+        ('meta property="og:title"', title, "content"),
+        ('meta property="og:description"', SITE_TAGLINE, "content"),
+        ('meta property="og:url"', page_url, "content"),
+        ('meta name="twitter:card"', "summary_large_image" if image_url else "summary", "content"),
+        ('meta name="twitter:title"', title, "content"),
+        ('meta name="twitter:description"', SITE_TAGLINE, "content"),
+    ]
+
+    if image_url:
+        tags.extend([
+            ('meta property="og:image"', image_url, "content"),
+            ('meta name="twitter:image"', image_url, "content"),
+        ])
+
+    lines = []
+    for tag_start, value, attr in tags:
+        if not value:
+            continue
+        lines.append(f'<{tag_start} {attr}="{escape(value)}">')
+    return "\n  ".join(lines)
 
 
 def render_thumb_card(entry: Entry, show_caption: bool) -> str:
@@ -499,33 +568,83 @@ def load_front_text() -> str:
     return SITE_TAGLINE
 
 
-def google_tag_id() -> str:
-    env_value = os.getenv("GOOGLE_TAG_ID", "").strip()
+def google_tag_manager_id() -> str:
+    env_value = os.getenv("GOOGLE_TAG_MANAGER_ID", "").strip()
     if env_value:
         return env_value
 
-    if SETTINGS_LOCAL_SOURCE.is_file():
-        raw = SETTINGS_LOCAL_SOURCE.read_text(encoding="utf-8")
-        match = GOOGLE_TAG_ID_RE.search(raw)
-        if match:
-            return match.group(1).strip()
+    configured = extract_php_setting(SETTINGS_LOCAL_SOURCE, GOOGLE_TAG_MANAGER_ID_RE)
+    if configured:
+        return configured
 
     return ""
 
 
-def render_google_tag() -> str:
-    tag_id = google_tag_id()
-    if not tag_id:
+def site_url() -> str:
+    env_value = os.getenv("SITE_URL", "").strip()
+    if env_value:
+        return normalize_site_url(env_value)
+
+    for source in (SETTINGS_LOCAL_SOURCE, SETTINGS_SOURCE):
+        configured = extract_php_setting(source, SITE_URL_RE)
+        if configured:
+            return normalize_site_url(configured)
+
+    if CNAME_SOURCE.is_file():
+        host = CNAME_SOURCE.read_text(encoding="utf-8").strip()
+        if host:
+            return normalize_site_url(f"https://{host}")
+
+    return ""
+
+
+def absolute_site_url(path: str) -> str:
+    base = site_url()
+    clean_path = "/" + path.lstrip("/") if path else "/"
+    if not base:
+        return clean_path
+    return f"{base}{clean_path}"
+
+
+def normalize_site_url(value: str) -> str:
+    normalized = value.strip()
+    if not normalized:
+        return ""
+    if "://" not in normalized:
+        normalized = f"https://{normalized}"
+    return normalized.rstrip("/")
+
+
+def extract_php_setting(path: Path, pattern: re.Pattern[str]) -> str:
+    if not path.is_file():
         return ""
 
+    raw = path.read_text(encoding="utf-8")
+    match = pattern.search(raw)
+    if not match:
+        return ""
+
+    return match.group(1).strip()
+
+
+def render_google_tag_manager() -> tuple[str, str]:
+    tag_id = google_tag_manager_id()
+    if not tag_id:
+        return "", ""
+
     tag_id = escape(tag_id)
-    return f"""<script async src="https://www.googletagmanager.com/gtag/js?id={tag_id}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){{dataLayer.push(arguments);}}
-    gtag('js', new Date());
-    gtag('config', '{tag_id}');
-  </script>"""
+    head_markup = f"""<!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':
+  new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  }})(window,document,'script','dataLayer','{tag_id}');</script>
+  <!-- End Google Tag Manager -->"""
+    body_markup = f"""<!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={tag_id}"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->"""
+    return head_markup, body_markup
 
 
 def display_license_label(value: str) -> str:
