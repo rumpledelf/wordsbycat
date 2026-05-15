@@ -16,15 +16,19 @@ Small local tool plus static compiler for a gallery of stupid words illustrated 
 - `data/site/banner.jpg`: homepage header image
 - `bin/compile_site.py`: static site generator
 - `bin/compile`: shell wrapper for the generator
+- `bin/deploy.sh`: archive local source assets and optionally upload `public/`
 - `public/`: generated static site output
 
 ## Local Setup
 
 1. Copy `includes/settings.local.php.example` to `includes/settings.local.php`
 2. Put your OpenAI key, OpenAI project id, and prompt in that file
-3. Adjust model or image sizes there if needed
+3. Optionally set `google_tag_id` for site analytics
+4. Adjust model or image sizes there if needed
 
 The prompt and anything private belong in `includes/settings.local.php`, not in committed files.
+
+If `google_tag_id` is set in `includes/settings.local.php` or `GOOGLE_TAG_ID` is present in the environment, the static compiler will include the Google tag snippet in generated pages.
 
 ## Local Compatibility
 
@@ -75,8 +79,6 @@ Edit these files:
 - about page body: `data/site/about.html`
 - homepage image: `data/site/banner.jpg`
 
-The old Jekyll `about.md` is no longer the main place to edit public copy.
-
 ## Building The Static Site
 
 Run:
@@ -107,12 +109,62 @@ Open:
 http://localhost:8001
 ```
 
+## Deploying
+
+Run:
+
+```bash
+./bin/deploy.sh
+```
+
+This does two things:
+
+- rebuilds `public/`
+- copies the working source asset set into iCloud Drive at `~/Library/Mobile Documents/com~apple~CloudDocs/projects/wordsbycat`
+
+By default it archives:
+
+- `data/originals/`
+- `data/derived/`
+- `data/thumbs/`
+- `data/letters/`
+- `data/site/`
+- `bin/`
+- `includes/`
+- `README.md`
+- `index.php`
+- `generate_caption.php`
+- `favicon.ico`
+- `CNAME`
+
+By default, the remote upload step syncs the generated `public/` contents directly to:
+
+```text
+deploy@wordsbycat.com:/var/www/wordsbycat
+```
+
+The compiler generates `public/.htaccess`, so Apache-specific site behavior ships as part of the built static output.
+
+Run this if you only want the local iCloud archive step:
+
+```bash
+./bin/deploy.sh --archive-only
+```
+
+Example:
+
+```bash
+REMOTE_TARGET='user@example.com:/var/www/wordsbycat' ./bin/deploy.sh
+```
+
+If `rsync` is available, the script uses it for both archive copies and remote deploy. Otherwise it falls back to `cp` locally and `scp` remotely.
+
 ## Current Site Shape
 
 - homepage: title, alphabet nav, banner, short text, random button
 - letter pages: thumb grid
 - entry pages: caption, main image, provenance, mini thumb strip, prev/next carets
-- footer: Armadillo Sandwich link plus About link
+- footer: Armadillo Sandwich link, About link, Contact link
 
 ## Notes
 
@@ -129,11 +181,3 @@ http://localhost:8001
 - `public/` is the generated output and deployable site artifact.
 - This differs from `regionalhub`, which also has offline data editors but uses them only for relatively static support data rather than for the whole site.
 - The point of this shape is to avoid running a live writable admin surface on the server at all.
-
-## Remaining Work
-
-- add more real content and test crowded letter pages plus longer mini thumb strips
-- set up deployment scripts
-- move live hosting to a proper virtual host instead of GitHub Pages
-- point the live vhost at generated `public/`
-- clean out the old Jekyll-era files once they are no longer needed

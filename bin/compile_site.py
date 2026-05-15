@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import html
 import json
+import os
 import shutil
 from dataclasses import dataclass
 from datetime import datetime
@@ -14,10 +15,10 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
 LETTERS_DIR = DATA_DIR / "letters"
 PUBLIC_DIR = ROOT / "public"
-ABOUT_SOURCE = ROOT / "about.md"
 ABOUT_SITE_SOURCE = DATA_DIR / "site" / "about.html"
 FRONT_TEXT_SOURCE = DATA_DIR / "site" / "front.txt"
 FAVICON_SOURCE = ROOT / "favicon.ico"
+SETTINGS_LOCAL_SOURCE = ROOT / "includes" / "settings.local.php"
 SITE_TITLE = "Words, by Cat"
 SITE_TAGLINE = "An alphabetical collection of stupid words illustrated by cats."
 ORANGE_LETTERS = {"c", "g", "k", "m", "q", "t", "x", "z"}
@@ -29,6 +30,7 @@ BANNER_CANDIDATES = [
     DATA_DIR / "site" / "banner.webp",
 ]
 CAPTION_EMPHASIS_RE = re.compile(r"\*([^*\n]+)\*")
+GOOGLE_TAG_ID_RE = re.compile(r"""google_tag_id'\]\s*=\s*['"]([^'"]+)['"]""")
 
 
 @dataclass
@@ -109,12 +111,14 @@ def build_public_tree(letters: dict[str, list[Entry]]) -> None:
     (PUBLIC_DIR / "images" / "main").mkdir(parents=True, exist_ok=True)
     (PUBLIC_DIR / "images" / "thumbs").mkdir(parents=True, exist_ok=True)
 
+    write_text(PUBLIC_DIR / ".htaccess", render_htaccess())
     write_text(PUBLIC_DIR / "assets" / "styles.css", styles_css())
 
     banner_public_path = copy_banner_if_present()
     copy_entry_images(letters)
     copy_favicon_if_present()
     write_text(PUBLIC_DIR / "index.html", render_home_page(letters, banner_public_path))
+    write_text(PUBLIC_DIR / "404.html", render_404_page())
     write_random_page(all_entries(letters))
     write_text(PUBLIC_DIR / "about" / "index.html", render_about_page(load_about_html()))
 
@@ -222,6 +226,28 @@ def render_about_page(about_html: str) -> str:
     return render_layout("About", body, page_title=None, current_letter=None, is_home=False)
 
 
+def render_404_page() -> str:
+    body = """
+    <section class="panel about-panel">
+      <div class="section-heading">
+        <h2>404</h2>
+      </div>
+      <div class="about-copy">
+        <p><strong>Page not found.</strong></p>
+        <p>The requested page could not be found.</p>
+      </div>
+    </section>
+    """
+    return render_layout("404", body, page_title=None, current_letter=None, is_home=False)
+
+
+def render_htaccess() -> str:
+    return """
+RewriteEngine on
+ErrorDocument 404 /404.html
+"""
+
+
 def render_letter_page(letter: str, entries: list[Entry]) -> str:
     title = letter.upper()
     if entries:
@@ -290,6 +316,7 @@ def render_layout(title: str, body: str, page_title: str | None, current_letter:
     header_class = "site-header home-header" if is_home else "site-header"
     page_header = ""
     footer = render_footer()
+    google_tag_markup = render_google_tag()
     behavior_script = """
 <script>
 (() => {
@@ -346,6 +373,7 @@ def render_layout(title: str, body: str, page_title: str | None, current_letter:
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/styles.css">
+  {google_tag_markup}
 </head>
 <body>
   <div class="site-shell">
@@ -460,19 +488,7 @@ def load_about_html() -> str:
     if ABOUT_SITE_SOURCE.is_file():
         return ABOUT_SITE_SOURCE.read_text(encoding="utf-8").strip()
 
-    if not ABOUT_SOURCE.is_file():
-        return "<p>About page missing.</p>"
-
-    raw = ABOUT_SOURCE.read_text(encoding="utf-8")
-    body = strip_front_matter(raw).strip()
-    if not body:
-        return "<p>About page missing.</p>"
-
-    paragraphs = [chunk.strip() for chunk in re.split(r"\n\s*\n", body) if chunk.strip()]
-    html_blocks = []
-    for paragraph in paragraphs:
-        html_blocks.append(f"<p>{paragraph}</p>")
-    return "\n".join(html_blocks)
+    return "<p>About page missing.</p>"
 
 
 def load_front_text() -> str:
@@ -483,12 +499,33 @@ def load_front_text() -> str:
     return SITE_TAGLINE
 
 
-def strip_front_matter(raw: str) -> str:
-    if raw.startswith("---"):
-        parts = raw.split("---", 2)
-        if len(parts) == 3:
-            return parts[2]
-    return raw
+def google_tag_id() -> str:
+    env_value = os.getenv("GOOGLE_TAG_ID", "").strip()
+    if env_value:
+        return env_value
+
+    if SETTINGS_LOCAL_SOURCE.is_file():
+        raw = SETTINGS_LOCAL_SOURCE.read_text(encoding="utf-8")
+        match = GOOGLE_TAG_ID_RE.search(raw)
+        if match:
+            return match.group(1).strip()
+
+    return ""
+
+
+def render_google_tag() -> str:
+    tag_id = google_tag_id()
+    if not tag_id:
+        return ""
+
+    tag_id = escape(tag_id)
+    return f"""<script async src="https://www.googletagmanager.com/gtag/js?id={tag_id}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){{dataLayer.push(arguments);}}
+    gtag('js', new Date());
+    gtag('config', '{tag_id}');
+  </script>"""
 
 
 def display_license_label(value: str) -> str:

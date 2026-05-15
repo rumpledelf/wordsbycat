@@ -1,6 +1,3 @@
-_site
-.sass-cache
-.jekyll-metadata
 includes/settings.local.php
 public/
 data/originals/*

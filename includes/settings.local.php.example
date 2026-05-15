@@ -4,6 +4,7 @@ declare(strict_types=1);
 $wbc_settings['openai_api_key'] = 'replace-me';
 $wbc_settings['openai_project'] = '';
 $wbc_settings['openai_text_model'] = 'gpt-5.4';
+$wbc_settings['google_tag_id'] = '';
 $wbc_settings['main_image_width'] = 1200;
 $wbc_settings['main_image_height'] = 896;
 $wbc_settings['thumb_size'] = 240;
